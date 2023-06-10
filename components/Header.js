@@ -37,10 +37,10 @@ function Header() {
                                 <DrawerContent>
                                     <DrawerCloseButton />
                                     <DrawerBody align='center'>
-                                        <Link href='/'><Text my='5' fontSize='xl'>Home</Text></Link>
-                                        <Link href='/services'><Text my='5' fontSize='xl'>Services</Text></Link>
-                                        <Link href='/faq'><Text my='5' fontSize='xl'>FAQ</Text></Link>
-                                        <Link href='/form'><Box p={3} borderRadius={15} bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Get a Quote</Text></Box></Link>
+                                        <Link href='/'><Text my='5' fontSize='xl' onClick={onClose}>Home</Text></Link>
+                                        <Link href='/services'><Text my='5' fontSize='xl' onClick={onClose}>Services</Text></Link>
+                                        <Link href='/faq'><Text my='5' fontSize='xl' onClick={onClose}>FAQ</Text></Link>
+                                        <Link href='/form'><Box p={3} borderRadius={15} bg="#E6BDBE" onClick={onClose}><Text as='b' fontSize='xl' color='white'>Get a Quote</Text></Box></Link>
                                     </DrawerBody>
                                 </DrawerContent>
                                 </DrawerOverlay>
