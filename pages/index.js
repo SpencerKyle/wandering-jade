@@ -31,6 +31,15 @@ export default function Home() {
         align='center'
         alt='landing picture of wandering jade'
         >
+          <Box align='center' display='flex' justifyContent='center'>
+          <Image 
+          src='/hero-text.png'
+          height='345'
+          width='900'
+          p='0'
+          m='0'
+          />
+          </Box>
       </Box>
       )}
 
