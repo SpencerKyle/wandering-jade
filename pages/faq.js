@@ -20,7 +20,7 @@ export default function FAQ() {
       <Heading mb='20' align='center'>Frequently Asked Questions</Heading>
       <Accordion allowToggle>
         {Object.entries(faq).map(([question, answer]) => (
-              <AccordionItem m='1' alignContent='center'>
+              <AccordionItem m='1' alignContent='center' key={question}>
                 <h2>
                   <AccordionButton>
                     <AddIcon boxSize={6} pr='3'/>
