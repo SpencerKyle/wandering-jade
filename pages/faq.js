@@ -30,7 +30,21 @@ export default function FAQ() {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4} key={answer}>
-                  {answer}
+                  {question === 'How Much Does it Cost To Have Wandering Jade at an Event?' ? (
+                    <Text>
+                      Pricing Varies for each event depending on # of people, location, and what services you would like provided.
+                      The best way to get an exact price is to submit a form and we will get back to you as soon as possible!
+                      To receive a quote submit an inquiry{' '}
+                      <Text as='span' fontWeight='bold'>
+                        <Link href='/form' target="_blank">
+                          here
+                        </Link>
+                      </Text>
+                      .
+                    </Text>
+                  ) : (
+                    answer
+                  )}
                 </AccordionPanel>
               </AccordionItem>
             ))}
@@ -50,7 +64,21 @@ export default function FAQ() {
               {Object.entries(faq).map(([question, answer]) => (
                 <Box mx='40' my='4' key={question}>
                   <Heading size='md'>{question}</Heading>
-                  <Text>{answer}</Text>
+                  {question === 'How Much Does it Cost To Have Wandering Jade at an Event?' ? (
+                    <Text>
+                      Pricing Varies for each event depending on # of people, location, and what services you would like provided.
+                      The best way to get an exact price is to submit a form and we will get back to you as soon as possible!
+                      To receive a quote submit an inquiry{' '}
+                      <Text as='span' fontWeight='bold'>
+                        <Link href='/form' target="_blank">
+                          here
+                        </Link>
+                      </Text>
+                      .
+                    </Text>
+                  ) : (
+                    <Text>{answer}</Text>
+                  )}
                 </Box>
               ))}
             </Box>
