@@ -17,7 +17,7 @@ export default function Services() {
                             width={300}
                             height={300}
                         />
-                        <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What's included?</Text>
+                        <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
                         <UnorderedList maxW={250} listStylePos='inside' textAlign='left'>
                             <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Bar Consultation/Drink Tasting</ListItem>
@@ -48,7 +48,7 @@ export default function Services() {
                         width={300}
                         height={300}
                     />
-                    <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What's included?</Text>
+                    <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
                     <UnorderedList maxW={250} listStylePos='inside' textAlign='left'>
                         <ListItem>Bar Delivery and Set up</ListItem>
                         <ListItem>Clean up and pickup</ListItem>
@@ -75,7 +75,7 @@ export default function Services() {
                             width={300}
                             height={300}
                         />
-                        <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What's included?</Text>
+                        <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
                         <UnorderedList maxW={250} listStylePos='inside' textAlign='left'>
                             <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Clean up and pickup</ListItem>
