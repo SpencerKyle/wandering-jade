@@ -24,7 +24,7 @@ export default function FAQ() {
                 <h2>
                   <AccordionButton>
                     <AddIcon boxSize={6} pr='3'/>
-                    <Box as='span' flex='1' textAlign='left' key={question} fontWeight='bold'>
+                    <Box as='span' flex='1' textAlign='left' fontWeight='bold' key={question}>
                       {question}
                     </Box>
                   </AccordionButton>

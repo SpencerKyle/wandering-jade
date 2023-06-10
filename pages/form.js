@@ -257,7 +257,7 @@ export default function Book() {
                 </FormControl>
 
                 <FormControl mb={3}>
-                    <FormLabel>Any other details you'd like us to know?</FormLabel>
+                    <FormLabel>Any other details you&apos;d like us to know?</FormLabel>
                     <Textarea  type="text" name="notes" value={values.notes} onChange={handleChange}/>
                 </FormControl>
 
