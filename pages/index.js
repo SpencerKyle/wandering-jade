@@ -1,14 +1,27 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, SimpleGrid, Flex, Spacer } from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, SimpleGrid, useMediaQuery } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  const [isMobile] = useMediaQuery('(max-width: 767px)');
+
   return (
     
     <Box bgColor='gray.50' p='10'>
-      <Box 
+      { isMobile && (
+          <Image
+            src='/landingBgNEW.png'
+            height='1000'
+            width='1000'
+            alt='landing picture of the wandering jade mobile bar'
+          />
+      )}
+
+      {!isMobile && (
+        <Box 
         bgImage="url('/landingBgNEW.png')"
         bgRepeat="no-repeat"
         bgPosition="center"
@@ -19,6 +32,8 @@ export default function Home() {
         alt='landing picture of wandering jade'
         >
       </Box>
+      )}
+
         <Box px='120' py='20'>
           <Divider/>
         </Box>
