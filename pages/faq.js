@@ -35,9 +35,9 @@ export default function FAQ() {
                       Pricing Varies for each event depending on # of people, location, and what services you would like provided.
                       The best way to get an exact price is to submit a form and we will get back to you as soon as possible!
                       To receive a quote submit an inquiry{' '}
-                      <Text as='span' fontWeight='bold'>
+                      <Text as='span' fontWeight='bold' textDecoration='underline'>
                         <Link href='/form' target="_blank">
-                          here
+                          HERE
                         </Link>
                       </Text>
                       .
@@ -69,9 +69,9 @@ export default function FAQ() {
                       Pricing Varies for each event depending on # of people, location, and what services you would like provided.
                       The best way to get an exact price is to submit a form and we will get back to you as soon as possible!
                       To receive a quote submit an inquiry{' '}
-                      <Text as='span' fontWeight='bold'>
+                      <Text as='span' fontWeight='bold' textDecoration='underline'>
                         <Link href='/form' target="_blank">
-                          here
+                          HERE
                         </Link>
                       </Text>
                       .
@@ -82,7 +82,7 @@ export default function FAQ() {
                 </Box>
               ))}
             </Box>
-            <Box mx='40' my='4' align='center'>
+            <Box mx='40' p='10' align='center'>
               <Text>If you have any other questions please feel free to reach out via email at <Text as='span' fontWeight='bold'><a href='mailto:wanderingjadebar@gmail.com'>wanderingjadebar@gmail.com</a></Text></Text>
             </Box>
           </CardBody>
