@@ -18,7 +18,7 @@ export default function Services() {
                             height={300}
                         />
                         <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left'>
+                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>Bar Consultation/Drink Tasting</ListItem>
                             <ListItem>Bartender Service Up to 5 hours</ListItem>
                             <ListItem>Cups and Straws</ListItem>
@@ -49,7 +49,7 @@ export default function Services() {
                         height={300}
                     />
                     <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                    <UnorderedList maxW={300} listStylePos='inside' textAlign='left'>
+                    <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
                         <ListItem>Custom Drink Menu<br></br>&nbsp;&nbsp;&nbsp;(garnishes provided)</ListItem>
                         <ListItem>100 lbs of ice</ListItem>
                         <ListItem>Water Station</ListItem>
@@ -76,7 +76,7 @@ export default function Services() {
                             height={300}
                         />
                         <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left'>
+                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Clean up and Pickup</ListItem>
                         </UnorderedList>
