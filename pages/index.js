@@ -31,13 +31,12 @@ export default function Home() {
         align='center'
         alt='landing picture of wandering jade'
         >
-          <Box align='center' display='flex' justifyContent='center'>
+          <Box align='center' display='flex' justifyContent='start' width='1000px' height='500' style={{position:"relative"}}>
           <Image 
-          src='/hero-text.png'
-          height='345'
-          width='900'
-          p='0'
-          m='0'
+          src='/hero-text-b.png'
+          fill
+          style={{objectFit:"contain"}}
+
           />
           </Box>
       </Box>
