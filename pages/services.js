@@ -49,7 +49,7 @@ export default function Services() {
                         height={300}
                     />
                     <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                    <UnorderedList maxW={250} listStylePos='inside' textAlign='left'>
+                    <UnorderedList maxW={300} listStylePos='inside' textAlign='left'>
                         <ListItem>Custom Drink Menu<br></br>&nbsp;&nbsp;&nbsp;(garnishes provided)</ListItem>
                         <ListItem>100 lbs of ice</ListItem>
                         <ListItem>Water Station</ListItem>
@@ -76,7 +76,7 @@ export default function Services() {
                             height={300}
                         />
                         <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                        <UnorderedList maxW={250} listStylePos='inside' textAlign='left'>
+                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left'>
                             <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Clean up and Pickup</ListItem>
                         </UnorderedList>
@@ -90,7 +90,7 @@ export default function Services() {
                 <CardFooter></CardFooter>
             </Card>
             </SimpleGrid>
-            <SimpleGrid columns={[1, 1, 2]} mx={10}>
+            <SimpleGrid columns={[1, 1, 2]} mx={10} pb='5'>
                 <Card align='center' flex='1'>
                     <CardHeader><Heading>Addons</Heading></CardHeader>
                     <CardBody>
