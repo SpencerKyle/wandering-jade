@@ -11,7 +11,7 @@ function Footer() {
                     <Center>
                     <VStack spacing={4}>
                     <Image 
-                        src='/logo-trans-2.png'
+                        src='/logo-trans.png'
                         height={200}
                         width={200}
                         alt='wandering jade logo'

@@ -18,6 +18,7 @@ export default function Services() {
                         />
                         <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
                         <UnorderedList maxW={250} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
+                            <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Bar Consultation/Drink &nbsp;&nbsp;&nbsp;Tasting (prior to event)</ListItem>
                             <ListItem>Bartender Service<br></br>&nbsp;&nbsp;&nbsp;(Up to 5 hours)</ListItem>
                             <ListItem>Cups and Straws</ListItem>
@@ -25,7 +26,6 @@ export default function Services() {
                             <ListItem>Custom Drink Menu <br></br>&nbsp;&nbsp;&nbsp;(garnishes provided)</ListItem>
                             <ListItem>100 lbs of ice</ListItem>
                             <ListItem>Water Station</ListItem>
-                            <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Clean up and Pickup</ListItem>
                         </UnorderedList>
                     </Box>
@@ -49,10 +49,10 @@ export default function Services() {
                     />
                     <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
                     <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
+                        <ListItem>Bar Delivery and Set up</ListItem>
                         <ListItem>Custom Drink Menu<br></br>&nbsp;&nbsp;&nbsp;(garnishes provided)</ListItem>
                         <ListItem>100 lbs of ice</ListItem>
                         <ListItem>Water Station</ListItem>
-                        <ListItem>Bar Delivery and Set up</ListItem>
                         <ListItem>Clean up and Pickup</ListItem>
                     </UnorderedList>
                     </Box>
