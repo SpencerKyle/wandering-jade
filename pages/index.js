@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, SimpleGrid, useMediaQuery } from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, Flex, useMediaQuery, extendTheme, Skeleton } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,12 +9,11 @@ export default function Home() {
   const [isMobile] = useMediaQuery('(max-width: 767px)');
 
   return (
-    
-    <Box bgColor='gray.50' p='10'>
+    <Box bgColor='gray.50' px='5' pt='10'>
       { isMobile && (
           <Image
-            src='/landingBgNEW.png'
-            height='1000'
+            src='/hero-mobile.png'
+            height='2000'
             width='1000'
             alt='landing picture of the wandering jade mobile bar'
           />
@@ -31,99 +30,102 @@ export default function Home() {
         align='center'
         alt='landing picture of wandering jade'
         >
-          <Box align='center' display='flex' justifyContent='start' width='1000px' height='500' style={{position:"relative"}}>
+          <Box align='center' display='flex' justifyContent='center' width='1000px' height='500' style={{position:"relative"}}>
           <Image 
-          src='/hero-text-b.png'
+          src='/hero-text.png'
           fill
           style={{objectFit:"contain"}}
-
           />
           </Box>
       </Box>
       )}
 
-        <Box px='120' py='20'>
-          <Divider/>
+        <Box px={['10',null ,'120']} py={['10',null ,'20']}>
+          <Divider my='10'/>
         </Box>
-        <Text pb='10' align='center' fontSize='xl'>The Wandering Jade is Utah’s Best Mobile Bar experience! Our vintage western style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas. </Text>
+        <Text pb={['5', null, '10']} align='center' fontSize='xl'>The Wandering Jade is Utah’s Best Mobile Bar experience! Our vintage western style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas. </Text>
         <Box px='120' py='19'>
-          <Divider/>
+          <Divider my='10'/>
         </Box>
         <Heading align='center'>Gallery</Heading>
-      <SimpleGrid columns={[1, null, 4]} spacing='12px' mt='10' pl='5'>
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+      <Flex flexWrap="wrap" mt="10" p='9'>
+
+        
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+            <Skeleton isLoaded>
             <Image 
-              src='/2.png'
+              src='/g1-v2.png'
+              fill
+              style={{objectFit:"contain"}}
+              alt='picture of wandering jade'
+              />
+              </Skeleton>
+          </Box>
+
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+            <Image 
+              src='/g2-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
-              src='/1.JPG'
+              src='/g3-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
-              src='/3.JPG'
+              src='/g4-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
-              src='/DSC_0036.jpg'
+              src='/g5-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
-              src='/8new.JPG'
+              src='/g6-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
-              src='/6.png'
+              src='/g7-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
+          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
-              src='/5.png'
+              src='/g8-v2.png'
               fill
               style={{objectFit:"contain"}}
               alt='picture of wandering jade'
               />
           </Box>
 
-          <Box width='300px' height='300px' style={{position:"relative"}}>
-            <Image 
-              src='/7.JPG'
-              fill
-              style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
-              />
-          </Box>
-
-      </SimpleGrid>
-    </Box>
+      </Flex>
+      </Box>
   )
 }

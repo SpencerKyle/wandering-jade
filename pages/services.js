@@ -1,8 +1,7 @@
-import { Card, CardHeader, CardBody, CardFooter, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, extendTheme } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export default function Services() {
-
 
     return (
         <Box bgColor='gray.50'>
@@ -18,9 +17,9 @@ export default function Services() {
                             height={300}
                         />
                         <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem>Bar Consultation/Drink Tasting</ListItem>
-                            <ListItem>Bartender Service Up to 5 hours</ListItem>
+                        <UnorderedList maxW={250} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
+                            <ListItem>Bar Consultation/Drink &nbsp;&nbsp;&nbsp;Tasting (prior to event)</ListItem>
+                            <ListItem>Bartender Service<br></br>&nbsp;&nbsp;&nbsp;(Up to 5 hours)</ListItem>
                             <ListItem>Cups and Straws</ListItem>
                             <ListItem>Koozies</ListItem>
                             <ListItem>Custom Drink Menu <br></br>&nbsp;&nbsp;&nbsp;(garnishes provided)</ListItem>

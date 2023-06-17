@@ -1,20 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Flex, Spacer, Box, Text, _hover, useMediaQuery, Drawer, DrawerBody, DrawerContent, DrawerOverlay, DrawerCloseButton, useDisclosure } from '@chakra-ui/react'
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { Flex, Spacer, Box, Text, _hover, useMediaQuery, Drawer, DrawerBody, DrawerContent, DrawerOverlay, DrawerCloseButton, useDisclosure, useStatStyles } from '@chakra-ui/react'
+import { HamburgerIcon, SunIcon } from "@chakra-ui/icons";
 
 
 function Header() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
     const [isMobile] = useMediaQuery('(max-width: 767px)');
+    
+    const [showIcon, setShowIcon] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setShowIcon(true);
+      } else {
+        setShowIcon(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+    }, []);
 
     return (
         <Box bgColor='gray.50'>
                 {isMobile && (
-                    <>
-                        <Box bgColor='gray.50' align='center'>
+                    <Box>
+                        <Box bgColor='gray.50' pos='fixed' width='100%' height={14} top={0} zIndex='1'>
+                            <Box ref={btnRef} onClick={onOpen} pos='absolute' size='lg' top='0' right='0'>
+                                <HamburgerIcon boxSize='8' m='3'/>
+                            </Box>
+                                <Box pos='absolute' top='0' left='0' m='1'>
+                                    <Image
+                                        src='/logo-transparent.svg'
+                                        height='50'
+                                        width='50'
+                                    />
+                                </Box>
+                        </Box>
+                        <Box bgColor='gray.50' align='center' pt='10'>
                             <Image 
                                 src="/wandering-jade-4.png"
                                 width={250}
@@ -23,9 +53,6 @@ function Header() {
                             />
                         </Box>
                         <Box>
-                        <Box ref={btnRef} onClick={onOpen} pos='absolute' size='lg' top='0' right='0'>
-                            <HamburgerIcon boxSize='8' m='3'/>
-                        </Box>
                         <Drawer
                             isOpen={isOpen}
                             placement="top"
@@ -46,7 +73,7 @@ function Header() {
                                 </DrawerOverlay>
                         </Drawer>
                         </Box>
-                    </>
+                    </Box>
                 )}
 
                 {!isMobile && (

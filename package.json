@@ -15,6 +15,7 @@
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fontsource/comfortaa": "^5.0.2",
+    "@fontsource/quicksand": "^5.0.3",
     "autoprefixer": "10.4.14",
     "dotenv": "^16.1.4",
     "eslint": "8.42.0",

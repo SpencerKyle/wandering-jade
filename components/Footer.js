@@ -1,46 +1,53 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Box, Text, _hover, VStack, HStack, Flex } from '@chakra-ui/react'
+import { Box, Text, _hover, VStack, HStack, Flex, Center } from '@chakra-ui/react'
 
 function Footer() {
     return (
-        <Box bgColor='#5c7551' align='center' height={400} p='10'>
-            <Flex justify='center' align='center'>
-            <VStack>
-            <Image 
-                src='/wandering-jade-4.png'
-                height={200}
-                width={200}
-                alt='wandering jade logo'
-            />
-            <Text fontSize='xl'><a href='mailto:wanderingjadebar@gmail.com'>wanderingjadebar@gmail.com</a></Text>
-            <Text fontSize='xl'><a href="tel:8018280319">801-358-7167</a></Text>
-            <HStack>
-                <a href='https://www.facebook.com/profile.php?id=100093143334442'>
+        <Box bgColor='gray.50' p={['5', null, '10']}>
+            <Box bgColor='#5c7551'>
+                <Flex height="90vh" justifyContent="center" alignItems="center">
+                    <Center>
+                    <VStack spacing={4}>
                     <Image 
-                        src='/facebook.svg'
-                        width={45}
-                        height={45}
-                        />
-                </a>
-                <a href="https://www.tiktok.com/@wandering.jade_bar">
-                    <Image 
-                        src='/tiktok-sq.svg'
-                        width={45}
-                        height={45}
-                        />
-                </a>
-                <a href="https://instagram.com/wandering.jade.bar">
-                    <Image 
-                        src='/instagram-fill.svg'
-                        width={45}
-                        height={45}
-                        />
-                </a>
-            </HStack>
-            </VStack>
-            </Flex>
+                        src='/logo-trans-2.svg'
+                        height={200}
+                        width={200}
+                        alt='wandering jade logo'
+                    />
+                    <Text fontSize={['xl', null, '2xl']}><a href='mailto:wanderingjadebar@gmail.com'>wanderingjadebar@gmail.com</a></Text>
+                    <Text fontSize={['xl', null, '2xl']}><a href="tel:8018280319">801-358-7167</a></Text>
+                    <HStack spacing={4}>
+                        <a href='https://www.facebook.com/profile.php?id=100093143334442' target="_blank">
+                            <Image 
+                                src='/facebook.svg'
+                                width={45}
+                                height={45}
+                                alt='facebook logo'
+                                />
+                        </a>
+                        <a href="https://www.tiktok.com/@wandering.jade_bar" target="_blank">
+                            <Image 
+                                src='/tiktok-sq.svg'
+                                width={45}
+                                height={45}
+                                alt='tik tok logo'
+                                />
+                        </a>
+                        <a href="https://instagram.com/wandering.jade.bar" target="_blank">
+                            <Image 
+                                src='/instagram-fill.svg'
+                                width={45}
+                                height={45}
+                                alt='instagram logo'
+                                />
+                        </a>
+                    </HStack>
+                    </VStack>
+                    </Center>
+                </Flex>
+            </Box>
         </Box>
     )
 }
