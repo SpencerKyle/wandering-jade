@@ -95,8 +95,9 @@ export default function Services() {
                 <CardFooter></CardFooter>
             </Card>
             </SimpleGrid>
-            <SimpleGrid columns={[1, 1, 3]} mx={10} pb='5' gap={10}>
-                <Box width='100%' height="100%">
+
+            <SimpleGrid columns={[1, 2, 3]} mx={10} pb='5' gap={12}>
+                <Box>
                     <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
@@ -114,14 +115,15 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
-
-                <Box width='100%' height="100%" style={{position:"relative"}}>
-                    <Image 
-                        src='/custom-drinks.png'
-                        style={{objectFit: "contain"}}
-                        fill    
+                <Box style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '100%' }} mt='6'>
+                    <Image
+                        src='/custom-drinks-menu.png'
+                        objectFit="contain"
+                        objectPosition="center"
+                        fill
                     />
-                </Box>
+                    </Box>
+
             </SimpleGrid>
         </Box>
     )
