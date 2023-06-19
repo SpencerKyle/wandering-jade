@@ -32,7 +32,7 @@ function Header() {
         <Box bgColor='gray.50'>
                 {isMobile && (
                     <Box>
-                        <Box bgColor='gray.50' pos='fixed' width='100%' height={14} top={0} zIndex='1'>
+                        <Box bgColor='gray.50' pos='fixed' width='100%' height={14} top={0} zIndex={1000}>
                             <Box ref={btnRef} onClick={onOpen} pos='absolute' size='lg' top='0' right='0'>
                                 <HamburgerIcon boxSize='8' m='3'/>
                             </Box>
