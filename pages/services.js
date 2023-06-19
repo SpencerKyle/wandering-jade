@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, AspectRatio } from '@chakra-ui/react'
 import Image from 'next/image'
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
@@ -95,10 +95,11 @@ export default function Services() {
                 <CardFooter></CardFooter>
             </Card>
             </SimpleGrid>
-            <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5' gap={7}>
-                <Box mb='10'>
-                    <Carousel width={400} height={600} hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+            <SimpleGrid columns={[1, 1, 3]} mx={10} pb='5' gap={10}>
+                <Box width='100%' height="100%">
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
+
                 <Card align='center'>
                     <CardHeader><Heading>Addons</Heading></CardHeader>
                     <CardBody>
@@ -113,13 +114,14 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
-                        <Box>
-                        <Image 
-                            src='/custom-drinks.png'
-                            width={400}
-                            height={600}
-                        />
-                        </Box>
+
+                <Box width='100%' height="100%" style={{position:"relative"}}>
+                    <Image 
+                        src='/custom-drinks.png'
+                        style={{objectFit: "contain"}}
+                        fill    
+                    />
+                </Box>
             </SimpleGrid>
         </Box>
     )

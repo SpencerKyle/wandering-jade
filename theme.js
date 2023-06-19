@@ -5,7 +5,6 @@ const theme = extendTheme({
   fonts: {
     heading: `'Comfortaa'`,
     body: `'Comfortaa'`,
-    services: `'Quicksand'`
   }
 })
  
