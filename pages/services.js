@@ -6,7 +6,8 @@ import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons';
 
 export default function Services() {
     const addonImgs = [`slide-1.JPG`, 'slide-2.JPG', 'slide-3.JPG', 'slide-4.JPG', 'slide-5.JPG', 'slide-6.JPG', 'slide-7.JPG', 'slide-8.JPG', 'slide-9.png'].map((number) => ({
-        src: `/${number}`
+        src: `/${number}`,
+        alt: "picture"
     }));
 
     return (
@@ -98,7 +99,7 @@ export default function Services() {
 
             <SimpleGrid columns={[1, 2, 3]} mx={10} pb='5' gap={12}>
                 <Box>
-                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+                    <Carousel style={{ height: '100%', width: 400 }} hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
                 <Card align='center'>
@@ -115,7 +116,7 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
-                <Box style={{ position: 'relative', width: '100%', height: 0, paddingBottom: '100%' }} mt='6'>
+                <Box style={{ position: 'relative', width: '100%', height: '100%', paddingBottom: '100%' }}>
                     <Image
                         src='/custom-drinks-menu.png'
                         objectFit="contain"
