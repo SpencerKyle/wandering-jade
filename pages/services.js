@@ -1,7 +1,13 @@
 import { Card, CardHeader, CardBody, CardFooter, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, extendTheme } from '@chakra-ui/react'
 import Image from 'next/image'
+import Carousel from 'react-gallery-carousel';
+import 'react-gallery-carousel/dist/index.css';
+import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons';
 
 export default function Services() {
+    const addonImgs = [`slide-1.JPG`, 'slide-2.JPG', 'slide-3.JPG', 'slide-4.JPG', 'slide-5.JPG', 'slide-6.JPG', 'slide-7.JPG', 'slide-8.JPG', 'slide-9.png'].map((number) => ({
+        src: `/${number}`
+    }));
 
     return (
         <Box bgColor='gray.50'>
@@ -89,7 +95,10 @@ export default function Services() {
                 <CardFooter></CardFooter>
             </Card>
             </SimpleGrid>
-            <SimpleGrid columns={[1, 1, 2]} mx={10} pb='5'>
+            <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5'>
+                <Box mb='10' mx='5'>
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='white'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='white'/>}/>
+                </Box>
                 <Card align='center' flex='1'>
                     <CardHeader><Heading>Addons</Heading></CardHeader>
                     <CardBody>
