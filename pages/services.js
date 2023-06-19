@@ -95,11 +95,11 @@ export default function Services() {
                 <CardFooter></CardFooter>
             </Card>
             </SimpleGrid>
-            <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5'>
-                <Box mb='10' mx='5'>
-                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+            <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5' gap={7}>
+                <Box mb='10'>
+                    <Carousel width={400} height={600} hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
-                <Card align='center' flex='1'>
+                <Card align='center'>
                     <CardHeader><Heading>Addons</Heading></CardHeader>
                     <CardBody>
                         <UnorderedList listStylePos='inside'>
@@ -113,10 +113,10 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
-                        <Box my='5' align='center'>
+                        <Box>
                         <Image 
-                            src='/drink-menu2.png'
-                            width={300}
+                            src='/custom-drinks.png'
+                            width={400}
                             height={600}
                         />
                         </Box>
