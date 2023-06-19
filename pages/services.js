@@ -97,7 +97,7 @@ export default function Services() {
             </SimpleGrid>
             <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5'>
                 <Box mb='10' mx='5'>
-                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='white'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='white'/>}/>
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
                 <Card align='center' flex='1'>
                     <CardHeader><Heading>Addons</Heading></CardHeader>
