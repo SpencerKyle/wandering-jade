@@ -118,7 +118,7 @@ export default function Services() {
                 </Card>
                 <Box>
                     <Image 
-                        src='/custom-drinks.png'
+                        src='/custom-drinks-menu.png'
                         width={400}
                         height={600}
                     />
