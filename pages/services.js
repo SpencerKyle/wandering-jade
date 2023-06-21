@@ -98,8 +98,8 @@ export default function Services() {
             </SimpleGrid>
 
             <SimpleGrid columns={[1, 2, 3]} mx={10} pb='5' gap={12}>
-                <Box>
-                    <Carousel style={{ height: '100%', width: 400 }} hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+                <Box height={400}>
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
                 <Card align='center'>
