@@ -96,10 +96,16 @@ export default function Services() {
                 <CardFooter></CardFooter>
             </Card>
             </SimpleGrid>
+<<<<<<< HEAD
 
             <SimpleGrid columns={[1, 2, 3]} mx={10} pb='5' gap={12}>
                 <Box>
                     <Carousel style={{ height: '100%', width: 400 }} hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+=======
+            <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5' gap={7}>
+                <Box mb='10' height={500}>
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+>>>>>>> develop
                 </Box>
 
                 <Card align='center'>
@@ -116,6 +122,7 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
+<<<<<<< HEAD
                 <Box style={{ position: 'relative', width: '100%', height: '100%', paddingBottom: '100%' }}>
                     <Image
                         src='/custom-drinks-menu.png'
@@ -125,6 +132,15 @@ export default function Services() {
                     />
                     </Box>
 
+=======
+                <Box>
+                    <Image 
+                        src='/custom-drinks.png'
+                        width={400}
+                        height={600}
+                    />
+                </Box>
+>>>>>>> develop
             </SimpleGrid>
         </Box>
     )
