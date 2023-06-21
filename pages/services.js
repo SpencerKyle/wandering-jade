@@ -96,8 +96,8 @@ export default function Services() {
             </Card>
             </SimpleGrid>
             <SimpleGrid columns={[1, 1, 3]} mx={5} pb='5' gap={7}>
-                <Box mb='10'>
-                    <Carousel width={400} height={600} hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+                <Box mb='10' height={500}>
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
                 <Card align='center'>
                     <CardHeader><Heading>Addons</Heading></CardHeader>
@@ -113,13 +113,13 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
-                        <Box>
-                        <Image 
-                            src='/custom-drinks.png'
-                            width={400}
-                            height={600}
-                        />
-                        </Box>
+                <Box>
+                    <Image 
+                        src='/custom-drinks.png'
+                        width={400}
+                        height={600}
+                    />
+                </Box>
             </SimpleGrid>
         </Box>
     )
