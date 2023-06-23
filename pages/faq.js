@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import { Box, Text, Heading, Card, CardBody, useMediaQuery, Accordion, AccordionItem, AccordionButton, AccordionPanel } from '@chakra-ui/react'
 import { AddIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
+import Head from 'next/head'
 
 import faq from '../lib/faq.json'
 
@@ -12,6 +13,10 @@ export default function FAQ() {
   const [isMobile] = useMediaQuery('(max-width: 767px)');
 
   return (
+    <>
+    <Head>
+      <title>Wandering Jade | FAQ</title>
+    </Head>
     <Box bgColor='gray.50' p='10'>
     
 
@@ -89,5 +94,6 @@ export default function FAQ() {
       </Card>
       )}
     </Box>
+    </>
   )
 }

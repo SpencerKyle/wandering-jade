@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, Flex, useMediaQuery, extendTheme, Skeleton } from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, Flex, useMediaQuery } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,6 +10,10 @@ export default function Home() {
   const [isMobile] = useMediaQuery('(max-width: 767px)');
 
   return (
+    <>
+    <Head>
+      <title>Wandering Jade | Home</title>
+    </Head>
     <Box bgColor='gray.50' px='5' pt='10'>
       { isMobile && (
           <Image
@@ -132,5 +137,6 @@ export default function Home() {
 
       </Flex>
       </Box>
+      </>
   )
 }

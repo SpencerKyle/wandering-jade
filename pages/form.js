@@ -1,6 +1,7 @@
 import { sendContactForm } from "/lib/api"
 import { Container, Heading, FormControl, FormLabel, Input, FormErrorMessage, Button, Select, Checkbox, List, ListItem, Textarea, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton, useDisclosure, Box, Flex, Card, Text } from "@chakra-ui/react"
 import { useState } from "react"
+import Head from "next/head";
 
 import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input/input';
 import 'react-phone-number-input/style.css';
@@ -112,6 +113,10 @@ export default function Book() {
     // bgColor='#8bf795'
     
     return (
+        <>
+        <Head>
+            <title>Wandering Jade | Quote</title>
+        </Head>
         <Box p='10' bgColor='gray.50'>
             <Card>
             <Container maxW="450px" mt={12}> 
@@ -275,6 +280,7 @@ export default function Book() {
             </Container>
             </Card>
         </Box>
+        </>
         )
 }
 

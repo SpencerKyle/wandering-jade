@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons';
+import Head from 'next/head';
 
 export default function Services() {
     const addonImgs = [`slide-1.JPG`, 'slide-2.JPG', 'slide-3.JPG', 'slide-4.JPG', 'slide-5.JPG', 'slide-6.JPG', 'slide-7.JPG', 'slide-8.JPG', 'slide-9.png'].map((number) => ({
@@ -11,6 +12,10 @@ export default function Services() {
     }));
 
     return (
+        <>
+        <Head>
+            <title>Wandering Jade | Services</title>
+        </Head>
         <Box bgColor='gray.50'>
             <SimpleGrid columns={[1, 1, 3]} spacing={10} mx={10} pb={10} pt={5}>
                 
@@ -125,5 +130,6 @@ export default function Services() {
                 </Box>
             </SimpleGrid>
         </Box>
+        </>
     )
 }
