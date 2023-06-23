@@ -15,7 +15,7 @@ export default function Home() {
             src='/hero-mobile.png'
             height='2000'
             width='1000'
-            alt='landing picture of the wandering jade mobile bar'
+            alt='side profile of the wandering jade mobile bar'
           />
       )}
 
@@ -28,13 +28,13 @@ export default function Home() {
         bgAttachment='fixed'
         h='345'
         align='center'
-        alt='landing picture of wandering jade'
         >
           <Box align='center' display='flex' justifyContent='center' width='1000px' height='500' style={{position:"relative"}}>
           <Image 
           src='/hero-text.png'
           fill
           style={{objectFit:"contain"}}
+          alt='side profile of the wandering jade mobile bar'
           />
           </Box>
       </Box>
@@ -43,85 +43,90 @@ export default function Home() {
         <Box px={['10',null ,'120']} py={['10',null ,'20']}>
           <Divider my='10'/>
         </Box>
-        <Text pb={['5', null, '10']} align='center' fontSize='xl'>The Wandering Jade is Utah’s Best Mobile Bar experience! Our vintage western style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas. </Text>
+        <Text pb={['5', null, '10']} align='center' fontSize='xl' w={[null, null,"50%"]} m={[null, null,'auto']}>The Wandering Jade is Utah’s Best Mobile Bar experience! Our vintage western style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas. </Text>
         <Box px='120' py='19'>
           <Divider my='10'/>
         </Box>
         <Heading align='center'>Gallery</Heading>
       <Flex flexWrap="wrap" mt="10" p='9'>
 
-        
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
-            <Skeleton isLoaded>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g1-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
-              </Skeleton>
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g2-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g3-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g4-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g5-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g6-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g7-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 
-          <Box width={['100%', null, '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
             <Image 
               src='/g8-v2.png'
               fill
+              sizes='100%'
               style={{objectFit:"contain"}}
-              alt='picture of wandering jade'
+              alt='Gallery picture for the Wandering Jade'
               />
           </Box>
 

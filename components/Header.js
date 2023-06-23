@@ -41,6 +41,7 @@ function Header() {
                                         src='/logo-transparent.svg'
                                         height='50'
                                         width='50'
+                                        alt='wandering jade logo'
                                     />
                                 </Box>
                         </Box>
@@ -83,6 +84,7 @@ function Header() {
                         src="/wandering-jade-4.png"
                         width={250}
                         height={250}
+                        alt='wandering jade logo'
                     />
 
                     <Spacer />
