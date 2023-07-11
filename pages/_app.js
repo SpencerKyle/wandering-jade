@@ -4,6 +4,7 @@ import { useMediaQuery } from "@chakra-ui/media-query";
 import Header from '/components/Header.js'
 import Footer from '/components/Footer.js'
 import Deal from '/components/Deal.js'
+import { Analytics } from '@vercel/analytics/react';
 
 import '@fontsource/comfortaa'
 import theme from '../theme'
@@ -17,6 +18,7 @@ export default function App({ Component, pageProps }) {
       <Header />
       <Component {...pageProps} />
       <Footer></Footer>
+      <Analytics />
     </ChakraProvider>
   )
 }
