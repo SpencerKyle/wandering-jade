@@ -43,7 +43,6 @@ export default function Services() {
                     </Box>
                     <Spacer />
                     <Box>
-                        <Text fontSize='xl' mt="10" fontWeight='bold'>$950+</Text>
                         <Text fontSize='md' mt='10' fontWeight='bold' maxW='250'>All Alcohol & Mixers must be provided by customer</Text>
                     </Box>
                 </CardBody>
@@ -70,7 +69,6 @@ export default function Services() {
                     </Box>
                     <Spacer />
                     <Box>
-                        <Text fontSize='xl' mt="10" fontWeight='bold'>$750+</Text>
                         <Text fontSize='md' mt='10' fontWeight='bold' maxW='250'>All Alcohol & Mixers must be provided by customer</Text> 
                     </Box>
                     </CardBody>
@@ -94,7 +92,6 @@ export default function Services() {
                     </Box>
                     <Spacer />
                     <Box align='center'>
-                        <Text fontSize='xl' mt="10" fontWeight='bold'>$700+</Text>
                         <Text fontSize='md' mt='10' fontWeight='bold' maxW='250'>All Alcohol & Mixers must be provided by customer</Text>
                     </Box>
                 </CardBody>
