@@ -1,27 +1,11 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, Flex, useMediaQuery, Button } from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/react'
-import { useEffect } from 'react'
-
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-} from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, Flex, useMediaQuery } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  useEffect(() => {
-    onOpen(); // Open the modal when the component mounts
-  }, []);
 
   const [isMobile] = useMediaQuery('(max-width: 767px)');
 
@@ -30,19 +14,6 @@ export default function Home() {
     <Head>
       <title>Wandering Jade | Home</title>
     </Head>
-
-    <Modal isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-        <ModalCloseButton />
-          <Image
-            src='/ribbon.jpg'
-            height='800'
-            width='800'
-            alt='Ribbon Cutting Ceremony happening on July 14th at Willow Park Campground'
-            />
-        </ModalContent>
-      </Modal>
 
     <Box bgColor='gray.50' px='5' pt='10'>
       { isMobile && (
