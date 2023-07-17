@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, Flex, useMediaQuery } from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, Flex, useMediaQuery, Spacer } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,11 +54,111 @@ export default function Home() {
           <Divider my='10'/>
         </Box>
         <Heading align='center'>Gallery</Heading>
-      <Flex flexWrap="wrap" mt="10" p='9'>
+      <Flex flexWrap="wrap" mt="10" p='9' >
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
+            <Image
+              key='g1'
+              src='/gallery/ribbonG1.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g1-v2.png'
+              src='/gallery/ribbonG10.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG3.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG4.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG5.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG12.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG7.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          {/* <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbon_g8.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box> */}
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG9.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG2.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG11.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG6.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -66,9 +166,9 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g2-v2.png'
+              src='/gallery/g1-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -76,9 +176,9 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g3-v2.png'
+              src='/gallery/g2-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -86,9 +186,9 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g4-v2.png'
+              src='/gallery/g3-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -96,9 +196,9 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g5-v2.png'
+              src='/gallery/sal_g3.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -106,9 +206,9 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g6-v2.png'
+              src='/gallery/g4-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -116,9 +216,9 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g7-v2.png'
+              src='/gallery/g5-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -126,15 +226,54 @@ export default function Home() {
               />
           </Box>
 
-          <Box width={['100%', '50%', '25%']} height='300px' mb='5' style={{position:"relative"}}>
+          <Box layerStyle='galleryItem'>
             <Image 
-              src='/g8-v2.png'
+              src='/gallery/g6-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g7-v2.png'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g8-v2.png'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/sal_g1.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/sal_g2.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
 
       </Flex>
       </Box>

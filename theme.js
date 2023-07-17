@@ -6,6 +6,14 @@ const theme = extendTheme({
     heading: `'Comfortaa'`,
     body: `'Comfortaa'`,
     banner: `'Georgia'`
+  },
+  layerStyles: {
+    galleryItem: {
+      width: ['100%', '50%', '25%'],
+      height: '300px', 
+      mb: '7',
+      position:"relative"
+    }
   }
 })
  
