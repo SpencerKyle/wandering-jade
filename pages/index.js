@@ -59,7 +59,7 @@ export default function Home() {
           <Box layerStyle='galleryItem'>
             <Image
               key='g1'
-              src='/gallery/ribbonG1.webp'
+              src='/gallery/ribbonG11.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -93,15 +93,7 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
-          <Box layerStyle='galleryItem'>
-            <Image 
-              src='/gallery/ribbonG5.webp'
-              fill
-              sizes='100%'
-              style={{objectFit:"contain"}}
-              alt='Gallery picture for the Wandering Jade'
-              />
-          </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG12.webp'
@@ -120,15 +112,6 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
-          {/* <Box layerStyle='galleryItem'>
-            <Image 
-              src='/gallery/ribbon_g8.webp'
-              fill
-              sizes='100%'
-              style={{objectFit:"contain"}}
-              alt='Gallery picture for the Wandering Jade'
-              />
-          </Box> */}
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG9.webp'
@@ -149,7 +132,16 @@ export default function Home() {
           </Box>
           <Box layerStyle='galleryItem'>
             <Image 
-              src='/gallery/ribbonG11.webp'
+              src='/gallery/ribbonG5.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG1.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
