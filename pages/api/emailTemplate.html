@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body style="margin: 0 auto 0 auto; width: 500px; font-family: 'trebuchet ms';background-color: white !important;">
+    <div>
+        <div style="text-align: center;">
+            <img style="width: 200px; height: 200px;" src="https://www.wanderingjademobilebar.com/_next/image?url=%2Fwandering-jade-4.png&w=640&q=75" alt="Wandering Jade Logo" />
+        </div>
+        <div style="text-align: center; padding: 10px;">
+            <h1 style="margin: 0 auto 0 auto; width: fit-content; border-radius: 15px; background-color: #E6BDBE; padding: .75rem; color: white;">New Quote!</h1>
+        </div>
+        <div style="padding: 10px 30px;">
+            <p>Name: <span style="font-weight: bold; font-size: larger;">${data.name}</span></p>
+            <p>Email: <span style="font-weight: bold; font-size: larger;">${data.email}</span></p>
+            <p>Phone: <span style="font-weight: bold; font-size: larger;">${data.phone}</span></p>
+            <p>Date: <span style="font-weight: bold; font-size: larger;"><a href="data:text/calendar;charset=utf8,${encodeURIComponent(`BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:${formattedDate}\nDTEND:${formattedDate}\nSUMMARY:Event Title\nDESCRIPTION:Event Description\nEND:VEVENT\nEND:VCALENDAR`)}}">${data.date}</a></span></p>
+            <p>Address: <span style="font-weight: bold; font-size: larger;">${data.address}</span></p>
+            <p>Type of Event: <span style="font-weight: bold; font-size: larger;">${data.event}</span></p>
+            <p>Guests: <span style="font-weight: bold; font-size: larger;">${data.count}</span></p>
+            <p>Package: <span style="font-weight: bold; font-size: larger;">${data.package}</span></p>
+            <p>Social: <span style="font-weight: bold; font-size: larger;">${data.social}</span></p>
+            <p>Additional Notes: <span style="font-weight: bold; font-size: larger;">${data.notes}</span></p>
+
+            <h3>Addons:</h3>
+                <ul>
+                    <li style="font-weight: bold; font-size: larger; margin: 5px;">Custom Drink Menu Planning</li>
+                </ul>
+        </div>
+        <div style="background-color: #5c7551 !important; vertical-align: middle;">
+            <div style="text-align: center;padding: 30px;">
+                <img style="width: 100px; height: 100px;" src="https://www.wanderingjademobilebar.com/_next/image?url=%2Flogo-trans.png&w=640&q=75" alt="Wandering Jade Logo" />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
