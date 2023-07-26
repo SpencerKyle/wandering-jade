@@ -3,10 +3,6 @@ import { Container, Heading, FormControl, FormLabel, Input, FormErrorMessage, Bu
 import { useState } from "react"
 import Head from "next/head";
 
-import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input/input';
-import 'react-phone-number-input/style.css';
-
-
 const initValues = {
     name: "",
     email: "",
@@ -33,9 +29,9 @@ export default function Book() {
     const [state, setState] = useState(initState)
     const [touched, setTouched] = useState({})
     const [isSubmitted, setIsSubmitted] = useState(false);
-
     const { values, isLoading, error } = state
 
+    // onBlur, onFocus handler
     const onBlur = ({ target }) => setTouched((prev) => ({...prev, 
         [target.name]:true
     }))
@@ -44,14 +40,8 @@ export default function Book() {
         [target.name]:true
     }))
 
-    //Modal
-    const { isOpen, onOpen } = useDisclosure()
-
-    const onClose = () => {
-        setIsSubmitted(false);
-    };
-      
-    //Default input and checkbox handler
+ 
+    // Input change handler
     const handleChange = (event) => {
         const { name, value, type, checked } = event.target;
         
@@ -65,6 +55,23 @@ export default function Book() {
                     : prevState.values.addons.filter((addon) => addon !== value),
                 },
             }));
+        } else if (name === 'phone') {
+            function formatPhone(phoneNumber) {
+                const cleanNum = phoneNumber.toString().replace(/\D/g, '');
+                const match = cleanNum.match(/^(\d{3})(\d{0,3})(\d{0,4})$/);
+                if (match) {
+                  return '(' + match[1] + ') ' + (match[2] ? match[2] + "-" : "") + match[3];
+                }
+                return cleanNum;
+              }
+
+            setState((prevState) => ({
+                ...prevState,
+                values: {
+                    ...prevState.values,
+                    [name]: formatPhone(value),
+                },
+            }));
         } else {
             setState((prevState) => ({
                 ...prevState,
@@ -75,21 +82,8 @@ export default function Book() {
             }));
         }
     };
-    
-    // Phone Input Handlers
-    const [phoneValue, setPhoneValue] = useState(values.phone)
 
-        const handlePhoneChange = (value) => {
-            setPhoneValue(value);
-            setState((prevState) => ({
-                ...prevState,
-                values: {
-                    ...prevState.values,
-                    phone: value,
-                },
-            }))
-        };
-    
+    // Submit    
     const onSubmit = async () => {
         setState((prev) => ({
             ...prev,
@@ -110,7 +104,14 @@ export default function Book() {
             }));
         }
     };
-    // bgColor='#8bf795'
+
+    //Success Modal
+    const { isOpen, onOpen } = useDisclosure()
+
+    const onClose = () => {
+        setIsSubmitted(false);
+    };
+      
     
     return (
         <>
@@ -118,12 +119,11 @@ export default function Book() {
             <title>Wandering Jade | Quote</title>
         </Head>
         <Box p='10' bgColor='gray.50'>
-            <Card>
+            <Card> 
             <Container maxW="450px" mt={12}> 
             
              <Modal isOpen={isSubmitted} onClose={onClose} isCentered>
                     <ModalOverlay />
-                    
                     <ModalContent >
                         <ModalCloseButton />
                         <ModalBody m='7' align='center'>
@@ -135,6 +135,7 @@ export default function Book() {
                         </ModalBody>
                     </ModalContent>
                 </Modal>
+
                 <FormControl mb={3} isRequired isInvalid={touched.name && !values.name}>
                     <FormLabel>Full Name</FormLabel>
                     <Input
@@ -163,16 +164,15 @@ export default function Book() {
 
                 <FormControl mb={3} isRequired isInvalid={touched.phone && !values.phone}>
                     <FormLabel>Phone</FormLabel>
-                    <PhoneInput
-                        defaultCountry="US"
-                        maxLength="14"
+                    <Input
+                        type='text'
                         name='phone'
                         errorBorderColor="red.300"
                         placeholder="(801) 555-555"
-                        inputComponent={Input}
-                        value={phoneValue}
-                        onChange={handlePhoneChange}
+                        value={values.phone}
+                        onChange={handleChange}
                         onBlur={onBlur}
+                        maxLength="14"
                         />
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
@@ -205,7 +205,16 @@ export default function Book() {
 
                 <FormControl mb={3} isRequired>
                     <FormLabel>What type of event is this</FormLabel>
-                    <Select name="event" placeholder="Select an event" isInvalid={touched.event && !values.event} errorBorderColor="red.300" value={state.values.event} onChange={handleChange} onBlur={onBlur} onFocus={onFocus}>
+                    <Select 
+                        name="event" 
+                        placeholder="Select an event" 
+                        isInvalid={touched.event && !values.event} 
+                        errorBorderColor="red.300" 
+                        value={state.values.event} 
+                        onChange={handleChange} 
+                        onBlur={onBlur} 
+                        onFocus={onFocus}>
+
                         {events.map((option) => (
                             <option key={option} value={option}>
                                 {option}
@@ -216,14 +225,28 @@ export default function Book() {
 
                 <FormControl mb={3} isRequired isInvalid={touched.count && !values.count}>
                     <FormLabel>Estimated Guest count</FormLabel>
-                            <Input type="text" name="count" value={values.count} onChange={handleChange} onBlur={onBlur}>
+                            <Input 
+                                type="text" 
+                                name="count" 
+                                value={values.count} 
+                                onChange={handleChange} 
+                                onBlur={onBlur}>
                             </Input>
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
 
                 <FormControl mb={3} isRequired>
                     <FormLabel>Which <a href="">Package</a> do you want?</FormLabel>
-                    <Select name="package" placeholder="Select a package" isInvalid={touched.package && !values.package} errorBorderColor="red.300" value={state.values.package} onChange={handleChange} onBlur={onBlur} onFocus={onFocus} >
+                    <Select 
+                        name="package" 
+                        placeholder="Select a package" 
+                        isInvalid={touched.package && !values.package} 
+                        errorBorderColor="red.300" 
+                        value={state.values.package} 
+                        onChange={handleChange} 
+                        onBlur={onBlur} 
+                        onFocus={onFocus}>
+
                         {packages.map((option) => (
                             <option key={option} value={option}>
                                 {option}
@@ -238,12 +261,12 @@ export default function Book() {
                         {addons.map((option) => (
                             <ListItem key={option}>
                                 <Checkbox
-                                key={option}
-                                value={option}
-                                p='1'
-                                onChange={handleChange}
-                                >
-                                {option}
+                                    key={option}
+                                    value={option}
+                                    p='1'
+                                    onChange={handleChange}
+                                    >
+                                    {option}
                                 </Checkbox>
                             </ListItem>
                         ))}
