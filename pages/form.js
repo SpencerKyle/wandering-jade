@@ -5,6 +5,7 @@ import Head from "next/head";
 
 const initValues = {
     name: "",
+    confirmEmail: "",
     email: "",
     phone: "",
     date: "",
@@ -160,6 +161,19 @@ export default function Book() {
                         onBlur={onBlur}
                         />
                         <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+
+                <FormControl mb={3} isRequired isInvalid={touched.confirmEmail && values.confirmEmail != values.email}>
+                    <FormLabel>Confirm Email</FormLabel>
+                    <Input
+                        type='confirmEmail'
+                        name='confirmEmail'
+                        errorBorderColor="red.300"
+                        value={values.confirmEmail}
+                        onChange={handleChange}
+                        onBlur={onBlur}
+                        />
+                        <FormErrorMessage>Emails do not match</FormErrorMessage>
                 </FormControl>
 
                 <FormControl mb={3} isRequired isInvalid={touched.phone && !values.phone}>
