@@ -32,7 +32,7 @@ export default function Services() {
                         <UnorderedList maxW={250} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>Bar Delivery and Set up</ListItem>
                             <ListItem>Bar Consultation/Drink &nbsp;&nbsp;&nbsp;Tasting (prior to event)</ListItem>
-                            <ListItem>Bartender Service<br></br>&nbsp;&nbsp;&nbsp;(Up to 5 hours)</ListItem>
+                            <ListItem>Bartender Service<br></br>&nbsp;&nbsp;&nbsp;(Up to 4 hours)</ListItem>
                             <ListItem>Cups and Straws</ListItem>
                             <ListItem>Koozies</ListItem>
                             <ListItem>Custom Drink Menu <br></br>&nbsp;&nbsp;&nbsp;(garnishes provided)</ListItem>
