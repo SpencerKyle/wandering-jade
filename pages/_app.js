@@ -3,7 +3,6 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { useMediaQuery } from "@chakra-ui/media-query";
 import Header from '/components/Header.js'
 import Footer from '/components/Footer.js'
-import Deal from '/components/Deal.js'
 import { Analytics } from '@vercel/analytics/react';
 
 import '@fontsource/comfortaa'
@@ -14,7 +13,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={theme}>
-      <Deal />
       <Header />
       <Component {...pageProps} />
       <Footer></Footer>
