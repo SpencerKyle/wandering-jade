@@ -35,7 +35,7 @@ export default function Team() {
                     </Box>
                     <Box maxW='40%'>
                         <Heading>Bella</Heading>
-                        <Text>Imagine a toddler drawing cartoon images of peoples emotions now imagine how that would look on a real person youre imagining Bella Swan. We do need to give her SOME credit as her acting did improve over the 8 years of the movies existence. She just really wants to be a vampire and doesn't really care about the consequences.</Text>
+                        <Text>Imagine a toddler drawing cartoon images of peoples emotions now imagine how that would look on a real person youre imagining Bella Swan. We do need to give her SOME credit as her acting did improve over the 8 years of the movies existence. She just really wants to be a vampire and doesnt really care about the consequences.</Text>
                     </Box>
                 </Box>
 
@@ -51,7 +51,7 @@ export default function Team() {
                     </Box>
                     <Box maxW='40%'>
                         <Heading>Jacob</Heading>
-                        <Text>Manchild. Jacob is actually a furry who can't control his emotions and ends up falling in love with a child. Too many red flags.</Text>
+                        <Text>Manchild. Jacob is actually a furry who cant control his emotions and ends up falling in love with a child. Too many red flags.</Text>
                     </Box>
                 </Box>
 
