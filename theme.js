@@ -13,6 +13,15 @@ const theme = extendTheme({
       height: '300px', 
       mb: '7',
       position:"relative"
+    },
+    teamItem: {
+      width: '100%',
+      height: ['50vh', '100vh' ,'100vh'], 
+      position:"relative"
+    },
+    teamName: {
+      mb: '10',
+      mt: '2'
     }
   }
 })
