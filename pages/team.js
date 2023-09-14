@@ -1,75 +1,57 @@
 import { Box, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
+import Head from 'next/head'
+
 
 export default function Team() {
     return (
         <>
-            <Box p='20' bgColor='gray.50' align='center' width="100%" display='flex' flexDirection='column'>
-                <Heading mb='100'>Meet the team!</Heading>
+            <Head>
+                <title>Wandering Jade | Team</title>
+            </Head>
+            <Box p='10' bgColor='gray.50' align='center' width="100%" display='flex' flexDirection='column'>
+                <Heading>Meet the team!</Heading>
+                <Text pb='10'>all bartenders are tips certified you can request a specific bartender and we will try to accommodate </Text>
 
-                <Box align='left' display='flex'>
-                    <Box layerStyle='galleryItem'>
+                <Box>
+                    <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/placeholder01.webp'
+                        src='/team/bartender1.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
-                        alt='Gallery picture for the Wandering Jade'
+                        alt='Picture of Amberdee in the Wandering Jade'
                         />
                     </Box>
-                    <Box maxW='40%'>
-                        <Heading>Edwardo</Heading>
-                        <Text>This is a bio about Edwardo the Vampire, he is pretty old and his skin sparkles when hit by direct sunlight. He is kinda cringe sometimes but makes up for it by being an extremely good baseball player. His toxic trait is that he can read peoples thoughts and emotions unless your name is Bella Swan.</Text>
-                    </Box>
-                </Box>
-                
-                <Box align='right' display='flex' flexDirection='row-reverse'>
-                    <Box layerStyle='galleryItem'>
-                        <Image 
-                        src='/team/placeholder02.webp'
-                        fill
-                        sizes='100%'
-                        style={{objectFit:"contain"}}
-                        alt='Gallery picture for the Wandering Jade'
-                        />
-                    </Box>
-                    <Box maxW='40%'>
-                        <Heading>Bella</Heading>
-                        <Text>Imagine a toddler drawing cartoon images of peoples emotions now imagine how that would look on a real person youre imagining Bella Swan. We do need to give her SOME credit as her acting did improve over the 8 years of the movies existence. She just really wants to be a vampire and doesnt really care about the consequences.</Text>
-                    </Box>
+                        <Heading layerStyle='teamName'>Amberdee</Heading>
                 </Box>
 
-                <Box align='left' display='flex'>
-                    <Box layerStyle='galleryItem'>
-                        <Image 
-                        src='/team/placeholder03.webp'
+                <Box>
+                    <Box layerStyle='teamItem'>
+                        <Image
+                        src='/team/bartender002.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
-                        alt='Gallery picture for the Wandering Jade'
+                        alt='Picture of Katelynn in the Wandering Jade'
                         />
                     </Box>
-                    <Box maxW='40%'>
-                        <Heading>Jacob</Heading>
-                        <Text>Manchild. Jacob is actually a furry who cant control his emotions and ends up falling in love with a child. Too many red flags.</Text>
-                    </Box>
+                        <Heading layerStyle='teamName'>Katelynn</Heading>
                 </Box>
 
-                <Box align='right' display='flex' flexDirection='row-reverse'>
-                    <Box layerStyle='galleryItem'>
-                        <Image 
-                        src='/team/placeholder04.webp'
+                <Box>
+                    <Box layerStyle='teamItem'>
+                        <Image
+                        src='/team/bartender03.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
-                        alt='Gallery picture for the Wandering Jade'
+                        alt='Picture of Harley in the Wandering Jade'
                         />
                     </Box>
-                    <Box maxW='40%'>
-                        <Heading>Dad</Heading>
-                        <Text>Despite leaving Bellas Mother to pursue the life on the Washington Frontier, Dad is a great dad who wants to see his daughter grow up stuff. Unfortunately for him she is now a vampire. Cool guy, 1010 glad he didnt die.</Text>
-                    </Box>
+                        <Heading layerStyle='teamName'>Harley</Heading>
                 </Box>
+    
             </Box>
         </>
     )

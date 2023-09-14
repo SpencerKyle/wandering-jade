@@ -91,6 +91,7 @@ function Header() {
                     <Flex direction="row" align="center" gap='6'>
                         <Box><Link href="/"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Home</Text></Link></Box>
                         <Box><Link href="/services"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Services</Text></Link></Box>
+                        <Box><Link href="/team"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Meet the Team</Text></Link></Box>
                         <Box><Link href="/faq"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>FAQ</Text></Link></Box>
                         <Link href="/form"><Box p={3} borderRadius={15} bg="#E6BDBE" _hover={{ bgColor: '#E6A3A4' }}><Text as='b' fontSize='xl' color='white'>Get a Quote</Text></Box></Link>
                     </Flex>
