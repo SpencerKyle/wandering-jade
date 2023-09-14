@@ -17,11 +17,10 @@ const theme = extendTheme({
     teamItem: {
       width: '100%',
       height: ['50vh', '100vh' ,'100vh'], 
-      position:"relative"
+      position:"relative",
+      mb: '10'
     },
     teamName: {
-      mb: '10',
-      mt: '2'
     }
   }
 })
