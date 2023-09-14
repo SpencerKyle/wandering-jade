@@ -11,7 +11,7 @@ export default function Team() {
             </Head>
             <Box p='10' bgColor='gray.50' align='center' width="100%" display='flex' flexDirection='column'>
                 <Heading>Meet the team!</Heading>
-                <Text pb='10'>all bartenders are tips certified you can request a specific bartender and we will try to accommodate </Text>
+                <Text pb='10'>All bartenders are TIPS certified, a specific bartender can be requested and we will try to accommodate based on their availability.</Text>
 
                 <Box>
                     <Box layerStyle='teamItem'>
