@@ -49,7 +49,7 @@ export default function Home() {
         <Box px={['10',null ,'120']} py={['10',null ,'20']}>
           <Divider my='10'/>
         </Box>
-        <Text pb={['5', null, '10']} align='center' fontSize='xl' w={[null, null,"50%"]} m={[null, null,'auto']}>The Wandering Jade is Utah’s Best Mobile Bar experience! Our vintage western style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas. </Text>
+        <Text pb={['5', null, '10']} align='center' fontSize='xl' w={[null, null,"50%"]} m={[null, null,'auto']}>We will take care of everything but the alcohol, Our goal is to allow you to have a stress free event and enjoy your guests. Our bartenders are licensed, experienced. We have liquor liability insurance as well. We offer 4 bar height tables, and we have additional mobile bar space as needed. We offer a consultation in order to determine the needs of the event and use our expertise to create a seamless cost effective experience.</Text>
         <Box px='120' py='19'>
           <Divider my='10'/>
         </Box>
