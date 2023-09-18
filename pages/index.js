@@ -296,16 +296,6 @@ export default function Home() {
 
           <Box layerStyle='galleryItem'>
             <Image 
-              src='/gallery/sal_g3.webp'
-              fill
-              sizes='100%'
-              style={{objectFit:"contain"}}
-              alt='Gallery picture for the Wandering Jade'
-              />
-          </Box>
-
-          <Box layerStyle='galleryItem'>
-            <Image 
               src='/gallery/g4-v2.png'
               fill
               sizes='100%'
