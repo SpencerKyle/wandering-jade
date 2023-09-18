@@ -66,6 +66,17 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g05.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG10.webp'
@@ -75,18 +86,60 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
-              src='/gallery/ribbonG3.webp'
+              src='/gallery/g01.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g11.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g1-v2.png'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g07.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG4.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g06.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -103,6 +156,7 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG7.webp'
@@ -121,6 +175,27 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g04.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g02.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG2.webp'
@@ -148,6 +223,17 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g08.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG6.webp'
@@ -160,7 +246,17 @@ export default function Home() {
 
           <Box layerStyle='galleryItem'>
             <Image 
-              src='/gallery/g1-v2.png'
+              src='/gallery/g10.webp'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/ribbonG3.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -171,6 +267,16 @@ export default function Home() {
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/g2-v2.png'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g09.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -201,6 +307,16 @@ export default function Home() {
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/g4-v2.png'
+              fill
+              sizes='100%'
+              style={{objectFit:"contain"}}
+              alt='Gallery picture for the Wandering Jade'
+              />
+          </Box>
+
+          <Box layerStyle='galleryItem'>
+            <Image 
+              src='/gallery/g03.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
