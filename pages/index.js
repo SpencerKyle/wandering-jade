@@ -166,15 +166,7 @@ export default function Home() {
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
-          <Box layerStyle='galleryItem'>
-            <Image 
-              src='/gallery/ribbonG9.webp'
-              fill
-              sizes='100%'
-              style={{objectFit:"contain"}}
-              alt='Gallery picture for the Wandering Jade'
-              />
-          </Box>
+
 
           <Box layerStyle='galleryItem'>
             <Image 
@@ -198,13 +190,14 @@ export default function Home() {
 
           <Box layerStyle='galleryItem'>
             <Image 
-              src='/gallery/ribbonG2.webp'
+              src='/gallery/hay_1.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
               alt='Gallery picture for the Wandering Jade'
               />
           </Box>
+
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/ribbonG5.webp'
@@ -227,16 +220,6 @@ export default function Home() {
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/g08.webp'
-              fill
-              sizes='100%'
-              style={{objectFit:"contain"}}
-              alt='Gallery picture for the Wandering Jade'
-              />
-          </Box>
-
-          <Box layerStyle='galleryItem'>
-            <Image 
-              src='/gallery/ribbonG6.webp'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
@@ -277,16 +260,6 @@ export default function Home() {
           <Box layerStyle='galleryItem'>
             <Image 
               src='/gallery/g09.webp'
-              fill
-              sizes='100%'
-              style={{objectFit:"contain"}}
-              alt='Gallery picture for the Wandering Jade'
-              />
-          </Box>
-
-          <Box layerStyle='galleryItem'>
-            <Image 
-              src='/gallery/g3-v2.png'
               fill
               sizes='100%'
               style={{objectFit:"contain"}}
