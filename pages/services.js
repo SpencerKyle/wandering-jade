@@ -24,7 +24,7 @@ export default function Services() {
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
                         <Image
-                            src="/going_all_out.png"
+                            src="/going_all_out_2.webp"
                             width={300}
                             height={300}
                         />
@@ -54,7 +54,7 @@ export default function Services() {
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
                     <Image
-                        src="/perfect_match.png"
+                        src="/perfect_match_2.webp"
                         width={300}
                         height={300}
                     />
@@ -80,7 +80,7 @@ export default function Services() {
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
                         <Image
-                            src="/take_it_easy.png"
+                            src="/take_it_easy_2.webp"
                             width={300}
                             height={300}
                         />
