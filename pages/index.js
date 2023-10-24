@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, Flex, useMediaQuery, Spacer } from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, Flex, useMediaQuery, SimpleGrid } from '@chakra-ui/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,36 +15,40 @@ export default function Home() {
       <title>Wandering Jade | Home</title>
     </Head>
 
-    <Box bgColor='gray.50' px='5' pt='10'>
+    <Box bgColor='gray.50' px='5' pt='5'>
       { isMobile && (
           <Image
-            src='/hero-mobile.png'
-            height='2000'
+            src='/hero_mobile.webp'
+            height='100'
             width='1000'
-            alt='side profile of the wandering jade mobile bar'
+            alt='Picture of the Wandering Jade Mobile Bar in front of a rustic wall.'
           />
       )}
 
       {!isMobile && (
-        <Box 
-        bgImage="url('/landingBgNEW.png')"
-        bgRepeat="no-repeat"
-        bgPosition="center"
-        bgSize='cover'
-        bgAttachment='fixed'
-        h='345'
-        align='center'
+        <Box
+          bgImage="url('/hero_bg.webp')"
+          bgPosition="center top"
+          bgSize='cover'
+          bgAttachment='fixed'
+          bgRepeat='no-repeat'
+          h={['45vh', '50vh', '75vh']}
+          align='center'
+
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
         >
-          <Box align='center' display='flex' justifyContent='center' width='1000px' height='500' style={{position:"relative"}}>
+        <Box width={[null, null, '50%']} height={['60%', null, '50%']} style={{position:"relative"}}>
           <Image 
-          src='/hero-text.png'
+          src='/wanderingjadetext.png'
           fill
-          style={{objectFit:"contain"}}
-          alt='side profile of the wandering jade mobile bar'
+          alt='Wandering Jade Text'
           />
-          </Box>
+        </Box>
       </Box>
-      )}
+      )} 
 
         <Box px={['10',null ,'120']} py={['10',null ,'20']}>
           <Divider my='10'/>
@@ -54,7 +58,9 @@ export default function Home() {
           <Divider my='10'/>
         </Box>
         <Heading align='center'>Gallery</Heading>
-      <Flex flexWrap="wrap" mt="10" p='9' >
+
+        
+      <SimpleGrid columns={[1, null, 4]} spacing={[10, null, 20]} mx={[null, null, '20']}>
           
           <Box layerStyle='galleryItem'>
             <Image 
@@ -377,7 +383,7 @@ export default function Home() {
           </Box>
 
 
-      </Flex>
+      </SimpleGrid>
       </Box>
       </>
   )

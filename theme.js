@@ -9,9 +9,8 @@ const theme = extendTheme({
   },
   layerStyles: {
     galleryItem: {
-      width: ['100%', '50%', '25%'],
-      height: '300px', 
-      mb: '7',
+      width: '100%',
+      height: '300px',
       position:"relative"
     },
     teamItem: {
@@ -19,8 +18,6 @@ const theme = extendTheme({
       height: ['50vh', '100vh' ,'100vh'], 
       position:"relative",
       mb: '10'
-    },
-    teamName: {
     }
   }
 })
