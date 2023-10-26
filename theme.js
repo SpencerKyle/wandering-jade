@@ -3,8 +3,8 @@ import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Comfortaa'`,
-    body: `'Comfortaa'`,
+    heading: `'Oswald'`,
+    body: `'Oswald'`,
     banner: `'Georgia'`
   },
   layerStyles: {
@@ -18,6 +18,17 @@ const theme = extendTheme({
       height: ['50vh', '100vh' ,'100vh'], 
       position:"relative",
       mb: '10'
+    },
+    customBox: {
+      position: 'absolute',
+      bottom: 0,
+      width: '75%',
+      height: 'auto',
+      backgroundColor: 'white',
+      textAlign: 'center',
+      padding: '20px',
+      transform: 'translateY(50%)',
+      boxShadow: 'md'
     }
   }
 })

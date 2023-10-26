@@ -5,7 +5,7 @@ import { Box, Text, _hover, VStack, HStack, Flex, Center } from '@chakra-ui/reac
 
 function Footer() {
     return (
-        <Box bgColor='gray.50' p={['5', null, '10']}>
+        <Box bgColor='gray.50' p={['5', null, '5']}>
             <Box bgColor='#5c7551'>
                 <Flex height="90vh" justifyContent="center" alignItems="center">
                     <Center>

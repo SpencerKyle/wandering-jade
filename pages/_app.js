@@ -6,6 +6,7 @@ import Footer from '/components/Footer.js'
 import { Analytics } from '@vercel/analytics/react';
 
 import '@fontsource/comfortaa'
+import '@fontsource/oswald'
 import theme from '../theme'
 
 export default function App({ Component, pageProps }) {
