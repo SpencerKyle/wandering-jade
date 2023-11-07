@@ -20,26 +20,16 @@ export default function Services() {
             <SimpleGrid columns={[1, 1, 3]} spacing={10} mx={10} pb={10} pt={20}>
                 
 
-            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']}>
+            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} mt='5'>
                 <CardHeader><Heading>PERFECT MATCH</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
-                    {/* <Image
-                        src="/perfect_match_2.webp"
-                        width={300}
-                        height={300}
-                    /> */}
-                    <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                    <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
-                        <ListItem>SERVING BEER, WINE, AND BUBBLES SERVICE</ListItem>
-                        <ListItem>HORSE TRAILER</ListItem>
-                        <ListItem>BARTENDER</ListItem>
-                        <ListItem>BAR BACK</ListItem>
-                    </UnorderedList>
-                    </Box>
-                    <Spacer />
-                    <Box>
-                        <Text fontSize='md' mt='10' fontWeight='bold' maxW='250'>All Alcohol & Mixers must be provided by customer</Text> 
+                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }} textStyle='serviceItem'>
+                            <ListItem>SERVING BEER, WINE, AND BUBBLES SERVICE</ListItem>
+                            <ListItem>HORSE TRAILER</ListItem>
+                            <ListItem>BARTENDER</ListItem>
+                            <ListItem>BAR BACK</ListItem>
+                        </UnorderedList>
                     </Box>
                     </CardBody>
                 <CardFooter>
@@ -53,12 +43,6 @@ export default function Services() {
                 <CardHeader><Heading>GOING ALL OUT</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
-                        {/* <Image
-                            src="/going_all_out_2.webp"
-                            width={300}
-                            height={300}
-                        /> */}
-                        <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
                         <UnorderedList maxW={250} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>TWO SIGNATURE COCKTAILS</ListItem>
                             <ListItem>BEER AND WINE SERVICE</ListItem>
@@ -72,29 +56,16 @@ export default function Services() {
                 </CardBody>
                 <CardFooter></CardFooter>
                 <Box layerStyle='customBox'>
-                        Starts at $800, Contact us for a custom quote!
+                        Contact us for your own custom quote!
                 </Box>
             </Card>
 
-            <Card bgColor='#E3DDD5' align='center' height={[null, null, '60%']}>    
+            <Card bgColor='#E3DDD5' align='center' height={[null, null, '75%']} mt='5'>    
                 <CardHeader><Heading>TAKE IT EASY</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
-                        {/* <Image
-                            src="/take_it_easy_2.webp"
-                            width={300}
-                            height={300}
-                        /> */}
-                        <Text fontSize='xl' mb="6" mt="2" fontWeight='bold'>What&apos;s included?</Text>
-                        <Text></Text>
-                        <UnorderedList maxW={300} listStylePos='inside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem></ListItem>
-                            <ListItem>Clean up and Pickup</ListItem>
-                        </UnorderedList>
-                    </Box>
-                    <Spacer />
-                    <Box align='center'>
-                        <Text fontSize='md' mt='10' fontWeight='bold' maxW='250'>All Alcohol & Mixers must be provided by customer</Text>
+                        <Text mb='5'>THE WANDERING JADE CAN ALWAYS BE USED FOR NON-ALCOHOLIC EVENTS</Text>
+                        <Text mb='5'>THE TRAILER IS A FUN TOUCH WHEN SERVING DESSERT OR MOCKTAILS!</Text>
                     </Box>
                 </CardBody>
                 <CardFooter></CardFooter>

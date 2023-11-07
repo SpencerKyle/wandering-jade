@@ -7,6 +7,11 @@ const theme = extendTheme({
     body: `'Oswald'`,
     banner: `'Georgia'`
   },
+  textStyles: {
+    serviceItem: {
+      fontWeight: 'bold',
+    }
+  },
   layerStyles: {
     galleryItem: {
       width: '100%',
