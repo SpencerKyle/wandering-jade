@@ -25,7 +25,7 @@ export default function Services() {
             <SimpleGrid columns={[1, 1, 3]} spacing={10} mx={10} pb={10} pt={20}>
                 
 
-            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} mt='5'>
+            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} my='5'>
                 <CardHeader><Heading>PERFECT MATCH</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
