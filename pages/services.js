@@ -5,10 +5,15 @@ import 'react-gallery-carousel/dist/index.css';
 import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons';
 import Head from 'next/head';
 
+import slides from '../lib/slideshow.json'
+
 export default function Services() {
-    const addonImgs = [`slide-1.JPG`, 'slide-2.JPG', 'slide-3.JPG', 'slide-4.JPG', 'slide-5.JPG', 'slide-6.JPG', 'slide-7.JPG', 'slide-8.JPG', 'slide-9.png'].map((number) => ({
-        src: `/${number}`,
-        alt: "picture"
+
+    //slideshow functionality
+    const addonImgs = Object.entries(slides).map(([id, [src, desc]]) => ({
+        src: `/slideshow/${src}`,
+        key: {id},
+        alt: {desc}
     }));
 
     return (
@@ -16,7 +21,7 @@ export default function Services() {
         <Head>
             <title>Wandering Jade | Services</title>
         </Head>
-        <Box bgColor='gray.50' position='relative'>
+        <Box bgColor='gray.50' position='relative' p={10}>
             <SimpleGrid columns={[1, 1, 3]} spacing={10} mx={10} pb={10} pt={20}>
                 
 
@@ -77,8 +82,8 @@ export default function Services() {
 
             <br/>
 
-            <SimpleGrid columns={[1, 1, 3]} mx={10} pb='5' gap={12}>
-                <Box height={555}>
+            <SimpleGrid columns={[1, 1, 3]} pb='5' gap={10}>
+                <Box height='75vh'>
                     <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
