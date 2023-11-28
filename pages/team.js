@@ -31,7 +31,7 @@ export default function Team() {
                     <Heading mb='3'>Katelynn</Heading>
                     <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/bartender2.webp'
+                        src='/team/bartender002.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
