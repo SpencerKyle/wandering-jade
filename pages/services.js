@@ -87,6 +87,9 @@ export default function Services() {
                     <CardBody>
                         <UnorderedList listStylePos='inside'>
                             <ListItem>Bartender Service</ListItem>
+                            <ListItem>Additional Pop-up Bar</ListItem>
+                            <ListItem>Corn Hole</ListItem>
+                            <ListItem>Barrels and Bar-Height Tables</ListItem>
                             <ListItem>Custom Drink Menu (Printed copy at event)</ListItem>
                             <ListItem>Bar Consultation/Drink Tasting (prior to event)</ListItem>
                             <ListItem>Koozies (price may vary based on quantity)</ListItem>
