@@ -26,14 +26,14 @@ export default function Services() {
                 
 
             <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} my='5'>
-                <CardHeader><Heading>PERFECT MATCH</Heading></CardHeader>
+                <CardHeader><Heading>Perfect Match</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box alignContent='center'>
                         <UnorderedList maxW={300} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem>SERVING BEER, WINE, AND BUBBLES SERVICE</ListItem>
-                            <ListItem>HORSE TRAILER</ListItem>
-                            <ListItem>BARTENDER</ListItem>
-                            <ListItem>BAR BACK</ListItem>
+                            <ListItem>Serving Beer, Wine, and Bubbles Service</ListItem>
+                            <ListItem>Horse Trailer</ListItem>
+                            <ListItem>Bartender</ListItem>
+                            <ListItem>Bar Back</ListItem>
                         </UnorderedList>
                     </Box>
                     </CardBody>
@@ -44,13 +44,13 @@ export default function Services() {
             </Card>
 
             <Card bgColor='#E6EDf5' align='center'>
-                <CardHeader><Heading>GOING ALL OUT</Heading></CardHeader>
+                <CardHeader><Heading>Going All Out</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
                         <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem>TWO SIGNATURE COCKTAILS</ListItem>
-                            <ListItem>BEER AND WINE SERVICE</ListItem>
-                            <ListItem>PRICING VARIES BASED ON COCKTAILS AND ADDONS</ListItem>
+                            <ListItem>Two Signature Cocktails</ListItem>
+                            <ListItem>Beer and Wine Service</ListItem>
+                            <ListItem>Pricing varies based on cocktails and addons</ListItem>
                         </UnorderedList>
                     </Box>
                     <Spacer />
@@ -68,8 +68,8 @@ export default function Services() {
                 <CardHeader><Heading>TAKE IT EASY</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                        <ListItem mb='5'>THE WANDERING JADE CAN ALWAYS BE USED FOR NON-ALCOHOLIC EVENTS</ListItem>
-                        <ListItem mb='5'>WE ALSO OFFER DESSERTS AND MOCKTAIL SERVING</ListItem>
+                        <ListItem mb='5'>The Wandering Jade can also be used for non-alcoholic events</ListItem>
+                        <ListItem mb='5'>We also offer desserts and mocktail service</ListItem>
                     </UnorderedList>
                 </CardBody>
                 <CardFooter></CardFooter>
@@ -92,15 +92,15 @@ export default function Services() {
 
                     <CardBody>
                         <UnorderedList listStylePos='outside'>
-                            <ListItem>BARTENDER SERVICE</ListItem>
-                            <ListItem>ADDITIONAL POP-UP BAR</ListItem>
-                            <ListItem>CORN HOLE</ListItem>
-                            <ListItem>BARRELS AND BAR-HEIGHT TABLES</ListItem>
-                            <ListItem>CUSTOM DRINK MENU (PRINTED COPY AT EVENT)</ListItem>
-                            <ListItem>BAR CONSULTATION AND DRINK TASTING (PRIOR TO EVENT)</ListItem>
-                            <ListItem>KOOZIES</ListItem>
-                            <ListItem>CUSTOM KOOZIES</ListItem>
-                            <ListItem>CUSTOM DRINKWARE</ListItem>
+                            <ListItem>Bartender Service</ListItem>
+                            <ListItem>Additional Pop-up Bar</ListItem>
+                            <ListItem>Corn Hole</ListItem>
+                            <ListItem>Barrels and Bar-height Tables</ListItem>
+                            <ListItem>Custom Drink Menu (Printed copy at event)</ListItem>
+                            <ListItem>Bar Consultation and Drink Tasting (Prior to Event)</ListItem>
+                            <ListItem>Koozies</ListItem>
+                            <ListItem>Custom Koozies</ListItem>
+                            <ListItem>Custom Drinkware</ListItem>
                         </UnorderedList>
                     </CardBody>
                     <CardFooter></CardFooter>

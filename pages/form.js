@@ -18,7 +18,7 @@ const initValues = {
     notes: "",
 }
 
-const addons = ["BARTENDER SERVICE", "ADDITIONAL POP-UP BAR", "CORN HOLE", "BARRELS AND BAR-HEIGHT TABLES", "CUSTOM DRINK MENU (PRINTED COPY AT EVENT)", "BAR CONSULTATION AND DRINK TASTING (PRIOR TO EVENT)", "KOOZIES", "CUSTOM KOOZIES", "CUSTOM DRINKWARE"]
+const addons = ["Bartender Service", "Additional Pop-up Bar", "Corn Hole", "Barrels and Bar-Height Tables", "Custom Drink Menu (Printed copy at event)", "Bar Consultation and Drink Tasting (Prior to Event)", "Koozies", "Custom Koozies", "Custom Drinkware"]
 const socials = ["Facebook", "Instagram", "TikTok", "Google", "Yelp", "Repeat Client", "Client Referral"]
 const packages = ["Take it Easy", "Perfect Match", "Going All Out"]
 const events = ["Wedding", "Corporate", "Party", "Event", "Other"]

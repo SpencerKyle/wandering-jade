@@ -65,12 +65,12 @@ function Header() {
                                 <DrawerContent>
                                     <DrawerCloseButton />
                                     <DrawerBody align='center'>
-                                        <Link href='/'><Text my='5' fontSize='xl' onClick={onClose}>Home</Text></Link>
-                                        <Link href='/services'><Text my='5' fontSize='xl' onClick={onClose}>Services</Text></Link>
-                                        <Link href='/team'><Text my='5' fontSize='xl' onClick={onClose}>Meet the Team</Text></Link>
-                                        <Link href='/gallery'><Text my='5' fontSize='xl' onClick={onClose}>Gallery</Text></Link>
+                                        <Link href='/'><Text my='5' fontSize='xl' onClick={onClose}>HOME</Text></Link>
+                                        <Link href='/services'><Text my='5' fontSize='xl' onClick={onClose}>SERVICES</Text></Link>
+                                        <Link href='/team'><Text my='5' fontSize='xl' onClick={onClose}>MEET THE TEAM</Text></Link>
+                                        <Link href='/gallery'><Text my='5' fontSize='xl' onClick={onClose}>GALLERY</Text></Link>
                                         <Link href='/faq'><Text my='5' fontSize='xl' onClick={onClose}>FAQ</Text></Link>
-                                        <Link href='/form'><Box p={3} borderRadius={15} bg="#E6BDBE" onClick={onClose}><Text as='b' fontSize='xl' color='white'>Get a Quote</Text></Box></Link>
+                                        <Link href='/form'><Box p={3} borderRadius={15} bg="#E6BDBE" onClick={onClose}><Text as='b' fontSize='xl' color='white'>GET A QUOTE</Text></Box></Link>
                                     </DrawerBody>
                                 </DrawerContent>
                                 </DrawerOverlay>
@@ -91,12 +91,12 @@ function Header() {
 
                     <Spacer />
                     <Flex direction="row" align="center" gap='6'>
-                        <Box><Link href="/"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Home</Text></Link></Box>
-                        <Box><Link href="/services"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Services</Text></Link></Box>
-                        <Box><Link href="/team"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Meet the Team</Text></Link></Box>
-                        <Box><Link href="/gallery"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>Gallery</Text></Link></Box>
+                        <Box><Link href="/"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>HOME</Text></Link></Box>
+                        <Box><Link href="/services"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>SERVICES</Text></Link></Box>
+                        <Box><Link href="/team"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>MEET THE TEAM</Text></Link></Box>
+                        <Box><Link href="/gallery"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>GALLERY</Text></Link></Box>
                         <Box><Link href="/faq"><Text as='b' fontSize='xl' _hover={{ color: "#E6A3A4" }}>FAQ</Text></Link></Box>
-                        <Link href="/form"><Box p={3} borderRadius={15} bg="#E6BDBE" _hover={{ bgColor: '#E6A3A4' }}><Text as='b' fontSize='xl' color='white'>Get a Quote</Text></Box></Link>
+                        <Link href="/form"><Box p={3} borderRadius={15} bg="#E6BDBE" _hover={{ bgColor: '#E6A3A4' }}><Text as='b' fontSize='xl' color='white'>GET A QUOTE</Text></Box></Link>
                     </Flex>
                     </Flex>
                 </>
