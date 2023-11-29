@@ -16,7 +16,7 @@ function Footer() {
                         width={200}
                         alt='wandering jade logo'
                     />
-                    <Text fontSize={['xl', null, 'xl']}><a href='mailto:wanderingjadebar@gmail.com'>wanderingjadebar@gmail.com</a></Text>
+                    <Text fontSize={['xl', null, 'xl']}><a href='mailto:wanderingjadebar@gmail.com'>WANDERINGJADEBAR@GMAIL.COM</a></Text>
                     <Text fontSize={['xl', null, 'xl']}><a href="tel:8013587167">801-358-7167</a></Text>
                     <HStack spacing={2}>
                         <a href='https://www.facebook.com/profile.php?id=100093143334442' target="_blank">
