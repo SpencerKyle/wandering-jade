@@ -27,7 +27,7 @@ function Footer() {
                                 alt='facebook logo'
                                 />
                         </a>
-                        <a href="https://www.tiktok.com/@wandering.jade_bar" target="_blank">
+                        <a href="https://www.tiktok.com/@wanderingjadebar" target="_blank">
                             <Image 
                                 src='/tiktok-sq.svg'
                                 width={30}
@@ -35,7 +35,7 @@ function Footer() {
                                 alt='tik tok logo'
                                 />
                         </a>
-                        <a href="https://instagram.com/wandering.jade.bar" target="_blank">
+                        <a href="https://instagram.com/wanderingjadebar" target="_blank">
                             <Image 
                                 src='/instagram-fill.svg'
                                 width={30}
