@@ -10,12 +10,10 @@ export default function Team() {
                 <title>Wandering Jade | Team</title>
             </Head>
             <Box p='10' bgColor='gray.50' align='center' width="100%" display='flex' flexDirection='column'>
-                <Heading>Meet the Team!</Heading>
-                <Text pb='10' my='10' >All bartenders are TIPS certified, a specific bartender can be requested and we will try to accommodate based on their availability.</Text>
-
+                <Heading mb='10'>Meet the Team!</Heading>
                 <Box>
                     <Heading layerStyle='teamName'>Amberdee</Heading>
-                    <Text mb='3'>Owner</Text>
+                    <Text mb='3'>Owner/Bartender</Text>
                     <Box layerStyle='teamItem'>
                         <Image
                         src='/team/bartender1.webp'
@@ -28,27 +26,29 @@ export default function Team() {
                 </Box>
 
                 <Box>
-                    <Heading mb='3'>Katelynn</Heading>
+                <Heading layerStyle='teamName'>Jake</Heading>
+                <Text mb='3'>Bartender</Text>                    
                     <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/bartender002.webp'
+                        src='/team/jakebartender.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
-                        alt='Picture of Katelynn in the Wandering Jade'
+                        alt='Picture of Jake in the Wandering Jade'
                         />
                     </Box>
                 </Box>
 
                 <Box>
-                    <Heading mb='3'>Harley</Heading>
+                <Heading layerStyle='teamName'>Katelynn</Heading>
+                <Text mb='3'>Bartender</Text>
                     <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/bartender03.webp'
+                        src='/team/katelynnbartender-1.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
-                        alt='Picture of Harley in the Wandering Jade'
+                        alt='Picture of Katelynn in the a field'
                         />
                     </Box>
                 </Box>
