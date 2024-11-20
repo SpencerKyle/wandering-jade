@@ -30,17 +30,19 @@ export default function Services() {
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box alignContent='center'>
                         <UnorderedList maxW={300} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem>Serving Beer, Wine, and Bubbles Service</ListItem>
-                            <ListItem>Horse Trailer</ListItem>
-                            <ListItem>Bartender</ListItem>
-                            <ListItem>Bar Back</ListItem>
+                            <ListItem>2 Certified Bartenders</ListItem>
+                            <ListItem>3 Spirits Options</ListItem>
+                            <ListItem>2 Beers Options</ListItem>
+                            <ListItem>2 Seltzer Options</ListItem>
+                            <ListItem>3 Mixers Options</ListItem>
+                            <ListItem>Any Garnishes Needed</ListItem>
                         </UnorderedList>
                     </Box>
-                    </CardBody>
-                    <CardFooter></CardFooter>
-                    <Box layerStyle='customBox'>
-                        Starts at $800, Contact us for a custom quote!
-                    </Box>
+                </CardBody>
+                <CardFooter></CardFooter>
+                <Box layerStyle='customBox'>
+                        Contact us for your own custom quote!
+                </Box>
             </Card>
 
             <Card bgColor='#E6EDf5' align='center'>
@@ -48,9 +50,17 @@ export default function Services() {
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
                         <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem>Two Signature Cocktails</ListItem>
-                            <ListItem>Beer and Wine Service</ListItem>
-                            <ListItem>Pricing varies based on cocktails and addons</ListItem>
+                            <ListItem>Full Soda Bar OR 2 Signature Cocktails</ListItem>
+                            <ListItem>2 Certified Bartenders</ListItem>
+                            <ListItem>4 Spirits Options</ListItem>
+                            <ListItem>3 Beers Options</ListItem>
+                            <ListItem>3 Seltzer Options</ListItem>
+                            <ListItem>5 Mixers Options</ListItem>
+                            <ListItem>Any Premium Garnishes</ListItem>
+                            <ListItem>Menu Consultation</ListItem>
+                            <ListItem>Shopping List Guide</ListItem>
+                            <ListItem>Custom Simple Syrups</ListItem>
+                            <ListItem>Bitters</ListItem>
                         </UnorderedList>
                     </Box>
                     <Spacer />
@@ -65,16 +75,17 @@ export default function Services() {
             </Card>
 
             <Card bgColor='#E3DDD5' align='center' height={[null, null, '80%']} mt='5'>    
-                <CardHeader><Heading>TAKE IT EASY</Heading></CardHeader>
+                <CardHeader><Heading>Take It Easy</Heading></CardHeader>
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                        <ListItem mb='5'>The Wandering Jade can also be used for non-alcoholic events</ListItem>
-                        <ListItem mb='5'>We also offer desserts and mocktail service</ListItem>
+                        <ListItem>Beer</ListItem>
+                        <ListItem>Wine & Bubbles Service</ListItem>
+                        <ListItem>2 Certified Bartenders</ListItem>
                     </UnorderedList>
                 </CardBody>
                 <CardFooter></CardFooter>
                 <Box layerStyle='customBox'>
-                        Starts at $800, Contact us for a custom quote!
+                        Contact us for your own custom quote!
                 </Box>
             </Card>
             </SimpleGrid>
@@ -92,24 +103,22 @@ export default function Services() {
 
                     <CardBody>
                         <UnorderedList listStylePos='outside'>
-                            <ListItem>Bartender Service</ListItem>
-                            <ListItem>Additional Pop-up Bar</ListItem>
-                            <ListItem>Corn Hole</ListItem>
-                            <ListItem>Barrels and Bar-height Tables</ListItem>
-                            <ListItem>Custom Drink Menu (Printed copy at event)</ListItem>
-                            <ListItem>Bar Consultation and Drink Tasting (Prior to Event)</ListItem>
-                            <ListItem>Koozies</ListItem>
-                            <ListItem>Custom Koozies</ListItem>
-                            <ListItem>Custom Drinkware</ListItem>
+                            <ListItem>Additional Spirit - $50 each</ListItem>
+                            <ListItem>Additional Mixer - $25 each</ListItem>
+                            <ListItem>Gypsy Pop Up Bar - $100/hr with a minimum of 4 hrs. Can be an addition to the horse trailer or rented by itself, will include extra bartender if rented together.</ListItem>
+                            <ListItem>Cornhole and Bags - $50</ListItem>
+                            <ListItem>5 bar height tables and decorative barrels- $50</ListItem>
+                            <ListItem>Koozies or Custom Koozies - Pricing Based on quantity and design</ListItem>
+                            <ListItem>Custom drinkware- Based on quantity and design</ListItem>
                         </UnorderedList>
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
                 <Box>
                     <Image 
-                        src='/custom-drinks-menu.png'
-                        width={400}
-                        height={600}
+                        src='/gypsypopupbar.webp'
+                        width={700}
+                        height={1050}
                     />
                 </Box>
             </SimpleGrid>
