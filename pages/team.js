@@ -26,20 +26,6 @@ export default function Team() {
                 </Box>
 
                 <Box>
-                <Heading layerStyle='teamName'>Jake</Heading>
-                <Text mb='3'>Bartender</Text>                    
-                    <Box layerStyle='teamItem'>
-                        <Image
-                        src='/team/jakebartender.webp'
-                        fill
-                        sizes='100%'
-                        style={{objectFit:"contain"}}
-                        alt='Picture of Jake in the Wandering Jade'
-                        />
-                    </Box>
-                </Box>
-
-                <Box>
                 <Heading layerStyle='teamName'>Katelynn</Heading>
                 <Text mb='3'>Bartender</Text>
                     <Box layerStyle='teamItem'>
@@ -48,7 +34,21 @@ export default function Team() {
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
-                        alt='Picture of Katelynn in the a field'
+                        alt='Picture of Katelynn in a field'
+                        />
+                    </Box>
+                </Box>
+
+                <Box>
+                <Heading layerStyle='teamName'>Jake</Heading>
+                <Text mb='3'>Bartender</Text>                    
+                    <Box layerStyle='teamItem'>
+                        <Image
+                        src='/team/jakebartender.webp'
+                        fill
+                        sizes='100%'
+                        style={{objectFit:"contain"}}
+                        alt='Picture of Jake in a field'
                         />
                     </Box>
                 </Box>
