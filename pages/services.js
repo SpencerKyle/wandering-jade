@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, AspectRatio } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Span, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, AspectRatio } from '@chakra-ui/react'
 import Image from 'next/image'
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
@@ -21,9 +21,33 @@ export default function Services() {
         <Head>
             <title>Wandering Jade | Services</title>
         </Head>
+
+        
         <Box bgColor='gray.50' position='relative' p={10} textStyle='serviceItem'>
+            
+            <Text align='center' fontWeight={'light'}>
+                <Text as={'span'} fontWeight={'bold'}>Please note:</Text> All packages are dry service and do <Text as={'span'} fontWeight={'bold'}>not</Text> include alcohol <Text as={'span'} fontWeight={'bold'}>or</Text> mixers. These must be supplied by the customer.
+            </Text> 
+            <Text align='center' fontWeight={'light'}>
+                All packages include a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up! (4 Hour Minimum Required)
+            </Text>
+
+
             <SimpleGrid columns={[1, 1, 3]} spacing={10} mx={10} pb={10} pt={20}>
-                
+
+            <Card bgColor='#E3DDD5' align='center' height={[null, null, '60%']} mt='5'>    
+                <CardHeader><Heading>Take It Easy</Heading></CardHeader>
+                <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
+                    <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
+                        <ListItem>2 Certified Bartenders</ListItem>
+                        <ListItem>Beer, Wine, & Bubbles Service</ListItem>
+                    </UnorderedList>
+                </CardBody>
+                <CardFooter></CardFooter>
+                <Box layerStyle='customBox'>
+                        Contact us for your own custom quote!
+                </Box>
+            </Card>
 
             <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} my='5'>
                 <CardHeader><Heading>Perfect Match</Heading></CardHeader>
@@ -50,8 +74,8 @@ export default function Services() {
                 <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
                     <Box>
                         <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                            <ListItem>Full Soda Bar OR 2 Signature Cocktails</ListItem>
                             <ListItem>2 Certified Bartenders</ListItem>
+                            <ListItem>Full Soda Bar OR 2 Signature Cocktails</ListItem>
                             <ListItem>4 Spirits Options</ListItem>
                             <ListItem>3 Beers Options</ListItem>
                             <ListItem>3 Seltzer Options</ListItem>
@@ -64,9 +88,6 @@ export default function Services() {
                         </UnorderedList>
                     </Box>
                     <Spacer />
-                    <Box>
-                        <Text fontSize='md' mt='10' fontWeight='bold' maxW='250'>All Alcohol & Mixers must be provided by customer</Text>
-                    </Box>
                 </CardBody>
                 <CardFooter></CardFooter>
                 <Box layerStyle='customBox'>
@@ -74,33 +95,16 @@ export default function Services() {
                 </Box>
             </Card>
 
-            <Card bgColor='#E3DDD5' align='center' height={[null, null, '80%']} mt='5'>    
-                <CardHeader><Heading>Take It Easy</Heading></CardHeader>
-                <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
-                    <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
-                        <ListItem>Beer</ListItem>
-                        <ListItem>Wine & Bubbles Service</ListItem>
-                        <ListItem>2 Certified Bartenders</ListItem>
-                    </UnorderedList>
-                </CardBody>
-                <CardFooter></CardFooter>
-                <Box layerStyle='customBox'>
-                        Contact us for your own custom quote!
-                </Box>
-            </Card>
             </SimpleGrid>
 
             <br/>
             <br/>
 
             <SimpleGrid columns={[1, 1, 3]} pb='5' gap={10}>
-                <Box height='75vh'>
-                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
-                </Box>
 
-                <Card align='center' bgColor="#FFE1E1" height={[null, null, '70%']}>
+            <Card align='center' bgColor="#FFE1E1" height={[null, null, '70%']}>
+                    
                     <CardHeader><Heading>ADD-ONS</Heading></CardHeader>
-
                     <CardBody>
                         <UnorderedList listStylePos='outside'>
                             <ListItem>Additional Spirit - $50 each</ListItem>
@@ -114,6 +118,11 @@ export default function Services() {
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>
+
+                <Box height='75vh'>
+                    <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
+                </Box>
+
                 <Box>
                     <Image 
                         src='/gypsypopupbar.webp'
