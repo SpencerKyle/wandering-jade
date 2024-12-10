@@ -27,18 +27,19 @@ export default function Services() {
             
             <Text align='center' fontWeight={'light'}>
                 <Text as={'span'} fontWeight={'bold'}>Please note:</Text> All packages are dry service and do <Text as={'span'} fontWeight={'bold'}>not</Text> include alcohol <Text as={'span'} fontWeight={'bold'}>or</Text> mixers. These must be supplied by the customer.
-            </Text> 
-            <Text align='center' fontWeight={'light'}>
+            </Text>
+
+            <Text align='center' fontWeight={'light'} mt='5'>
                 All packages include a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up! (4 Hour Minimum Required)
             </Text>
 
 
-            <SimpleGrid columns={[1, 1, 3]} spacing={10} mx={10} pb={10} pt={20}>
-
-            <Card bgColor='#E3DDD5' align='center' height={[null, null, '60%']} mt='5'>    
+            <SimpleGrid columns={[1, 1, 5]} spacing={10} pb={10} pt={20} justifyItems="center">
+            <Box></Box>
+            <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '70%']} width={['100%', null, '70%']} mt='5'>    
                 <CardHeader><Heading>Take It Easy</Heading></CardHeader>
-                <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
-                    <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
+                <CardBody>
+                    <UnorderedList maxW={250} listStylePos='outside' textAlign='left'>
                         <ListItem>2 Certified Bartenders</ListItem>
                         <ListItem>Beer, Wine, & Bubbles Service</ListItem>
                     </UnorderedList>
@@ -49,9 +50,9 @@ export default function Services() {
                 </Box>
             </Card>
 
-            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} my='5'>
+            <Card bgColor='#C1C9AF' align='center' height={[null, null, '70%']} width={['100%', null, '70%']} my='5'>
                 <CardHeader><Heading>Perfect Match</Heading></CardHeader>
-                <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
+                <CardBody>
                     <Box alignContent='center'>
                         <UnorderedList maxW={300} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>2 Certified Bartenders</ListItem>
@@ -69,9 +70,9 @@ export default function Services() {
                 </Box>
             </Card>
 
-            <Card bgColor='#E6EDf5' align='center'>
+            <Card bgColor='#E6EDf5' align='center' width={['100%', null, '70%']}>
                 <CardHeader><Heading>Going All Out</Heading></CardHeader>
-                <CardBody display='flex' flex='1' flexDirection='column' justifyContent='space-between' align='center'>
+                <CardBody>
                     <Box>
                         <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>2 Certified Bartenders</ListItem>
