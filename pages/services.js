@@ -33,10 +33,9 @@ export default function Services() {
                 All packages include a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up! (4 Hour Minimum Required)
             </Text>
 
-
-            <SimpleGrid columns={[1, 1, 5]} spacing={10} pb={10} pt={20} justifyItems="center">
-            <Box></Box>
-            <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '70%']} width={['100%', null, '70%']} mt='5'>    
+        <Box width={['100%', null, "60%"]}  margin='auto'>
+            <SimpleGrid  columns={[1, 1, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]}>
+            <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '60%']} width={['100%', null, '70%']} mt='5'>    
                 <CardHeader><Heading>Take It Easy</Heading></CardHeader>
                 <CardBody>
                     <UnorderedList maxW={250} listStylePos='outside' textAlign='left'>
@@ -50,10 +49,10 @@ export default function Services() {
                 </Box>
             </Card>
 
-            <Card bgColor='#C1C9AF' align='center' height={[null, null, '70%']} width={['100%', null, '70%']} my='5'>
+            <Card bgColor='#C1C9AF' align='center' height={[null, null, '70%']} width={['100%', null, '70%']} my='5' order={[2, 3]}>
                 <CardHeader><Heading>Perfect Match</Heading></CardHeader>
                 <CardBody>
-                    <Box alignContent='center'>
+                    <Box>
                         <UnorderedList maxW={300} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>2 Certified Bartenders</ListItem>
                             <ListItem>3 Spirits Options</ListItem>
@@ -70,11 +69,11 @@ export default function Services() {
                 </Box>
             </Card>
 
-            <Card bgColor='#E6EDf5' align='center' width={['100%', null, '70%']}>
+            <Card bgColor='#E6EDf5' align='center' width={['100%', null, '70%']} order={[3, 2]}>
                 <CardHeader><Heading>Going All Out</Heading></CardHeader>
                 <CardBody>
                     <Box>
-                        <UnorderedList maxW={250} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
+                        <UnorderedList maxW={200} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
                             <ListItem>2 Certified Bartenders</ListItem>
                             <ListItem>Full Soda Bar OR 2 Signature Cocktails</ListItem>
                             <ListItem>4 Spirits Options</ListItem>
@@ -103,7 +102,7 @@ export default function Services() {
 
             <SimpleGrid columns={[1, 1, 3]} pb='5' gap={10}>
 
-            <Card align='center' bgColor="#FFE1E1" height={[null, null, '70%']}>
+                <Card align='center' bgColor="#FFE1E1" height={[null, null, '70%']} order={[1, 2]} my='auto'>
                     
                     <CardHeader><Heading>ADD-ONS</Heading></CardHeader>
                     <CardBody>
@@ -120,11 +119,11 @@ export default function Services() {
                     <CardFooter></CardFooter>
                 </Card>
 
-                <Box height='75vh'>
+                <Box borderRadius="lg" overflow="hidden" height='55vh' order={[2, 1]}>
                     <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
-                <Box>
+                <Box borderRadius="lg" overflow="hidden" order={[3, 3]} my='auto'>
                     <Image 
                         src='/gypsypopupbar.webp'
                         width={700}
@@ -132,6 +131,7 @@ export default function Services() {
                     />
                 </Box>
             </SimpleGrid>
+        </Box>
         </Box>
         </>
     )
