@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardBody, CardFooter, Span, UnorderedList, Box, ListItem, Text, SimpleGrid, Flex, Heading, Spacer, ChakraProvider, AspectRatio } from '@chakra-ui/react'
 import Image from 'next/image'
+import Link from 'next/link';
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons';
@@ -35,7 +36,7 @@ export default function Services() {
 
         <Box width={['100%', null, "60%"]}  margin='auto'>
             <SimpleGrid  columns={[1, 1, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]}>
-            <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '60%']} width={['100%', null, '70%']} mt='5'>    
+            <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '60%']} width={['100%', null, '80%']} mt='5'>    
                 <CardHeader><Heading>Take It Easy</Heading></CardHeader>
                 <CardBody>
                     <UnorderedList maxW={250} listStylePos='outside' textAlign='left'>
@@ -45,11 +46,13 @@ export default function Services() {
                 </CardBody>
                 <CardFooter></CardFooter>
                 <Box layerStyle='customBox'>
-                        Contact us for your own custom quote!
+                    <Link href='/form'>
+                        Click here for your own custom quote!
+                    </Link>                
                 </Box>
             </Card>
 
-            <Card bgColor='#C1C9AF' align='center' height={[null, null, '70%']} width={['100%', null, '70%']} my='5' order={[2, 3]}>
+            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} width={['100%', null, '70%']} my='5' order={[2, 3]}>
                 <CardHeader><Heading>Perfect Match</Heading></CardHeader>
                 <CardBody>
                     <Box>
@@ -65,11 +68,13 @@ export default function Services() {
                 </CardBody>
                 <CardFooter></CardFooter>
                 <Box layerStyle='customBox'>
-                        Contact us for your own custom quote!
+                    <Link href='/form'>
+                        Click here for your own custom quote!
+                    </Link>
                 </Box>
             </Card>
 
-            <Card bgColor='#E6EDf5' align='center' width={['100%', null, '70%']} order={[3, 2]}>
+            <Card bgColor='#E6EDf5' align='center' width={['100%', null, '80%']} order={[3, 2]}>
                 <CardHeader><Heading>Going All Out</Heading></CardHeader>
                 <CardBody>
                     <Box>
@@ -91,7 +96,9 @@ export default function Services() {
                 </CardBody>
                 <CardFooter></CardFooter>
                 <Box layerStyle='customBox'>
-                        Contact us for your own custom quote!
+                    <Link href='/form'>
+                        Click here for your own custom quote!
+                    </Link>                
                 </Box>
             </Card>
 
