@@ -17,7 +17,8 @@ export default function Gallery() {
                 <title>Wandering Jade | Gallery</title>
             </Head>
             <Box bgColor='gray.50'>
-        
+            <Box mx={[null, null, '20%']}>
+
             <SimpleGrid columns={[1, null, 4]} spacing={[10, null, 10]} p={[null, null, '10']}>
                 {galleryArray.map(([id, [url, desc]]) => (
                     <Box layerStyle='galleryItem' key={id}>
@@ -31,6 +32,8 @@ export default function Gallery() {
                     </Box>
                 ))}
             </SimpleGrid>
+            </Box>
+
 
             </Box>
         </>
