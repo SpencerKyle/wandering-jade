@@ -7,7 +7,7 @@ function Footer() {
     return (
         <Box bgColor='gray.50'>
             <Box bgColor='#d1bc98'>
-                <Flex height="35vh" justifyContent="center" alignItems='center'>
+                <Flex height="40vh" justifyContent="center" alignItems='center'>
                     <VStack spacing={2}>
                     <Image
                         src='/logo-footer.png'
