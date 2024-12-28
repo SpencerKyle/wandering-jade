@@ -11,6 +11,7 @@ const initValues = {
     date: "",
     address: "",
     event: "",
+    weddingDetails: "",
     count: "",
     package: "",
     addons: [],
@@ -113,7 +114,6 @@ export default function Book() {
         setIsSubmitted(false);
     };
       
-    
     return (
         <>
         <Head>
@@ -226,7 +226,7 @@ export default function Book() {
                         errorBorderColor="red.300" 
                         value={state.values.event} 
                         onChange={handleChange} 
-                        onBlur={onBlur} 
+                        onBlur={onBlur}
                         onFocus={onFocus}>
 
                         {events.map((option) => (
@@ -236,6 +236,20 @@ export default function Book() {
                         ))}
                     </Select>
                 </FormControl>
+
+                {values.event === "Wedding" && (
+                    <FormControl mb={3}>
+                        <FormLabel>Wedding Coordinator Contact Info</FormLabel>
+                        <Input
+                            type="text"
+                            name="weddingDetails"
+                            placeholder="Phone and/or Email"
+                            value={values.weddingDetails}
+                            onChange={handleChange}
+                            onBlur={onBlur}
+                        />
+                    </FormControl>
+                )}
 
                 <FormControl mb={3} isRequired isInvalid={touched.count && !values.count}>
                     <FormLabel>Estimated Guest count</FormLabel>
