@@ -6,6 +6,7 @@ import 'react-gallery-carousel/dist/index.css';
 import { ChevronRightIcon, ChevronLeftIcon } from '@chakra-ui/icons';
 import Head from 'next/head';
 
+import AddonsList from '../config/addonsList.js';
 import slides from '../lib/slideshow.json'
 
 export default function Services() {
@@ -34,8 +35,8 @@ export default function Services() {
                 All packages include a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up! (4 Hour Minimum Required)
             </Text>
 
-        <Box width={['100%', null, "60%"]}  margin='auto'>
-            <SimpleGrid  columns={[1, 1, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]}>
+        <Box width={['80vw', "80vw", "75vw"]}  margin='auto'>
+            <SimpleGrid  columns={[1, 2, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]}>
             <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '60%']} width={['100%', null, '80%']} mt='5'>    
                 <CardHeader><Heading>Take It Easy</Heading></CardHeader>
                 <CardBody>
@@ -113,15 +114,7 @@ export default function Services() {
                     
                     <CardHeader><Heading>ADD-ONS</Heading></CardHeader>
                     <CardBody>
-                        <UnorderedList listStylePos='outside'>
-                            <ListItem>Additional Spirit - $50 each</ListItem>
-                            <ListItem>Additional Mixer - $25 each</ListItem>
-                            <ListItem>Gypsy Pop Up Bar - $100/hr with a minimum of 4 hrs. Can be an addition to the horse trailer or rented by itself, will include extra bartender if rented together.</ListItem>
-                            <ListItem>Cornhole and Bags - $50</ListItem>
-                            <ListItem>5 bar height tables and decorative barrels- $50</ListItem>
-                            <ListItem>Koozies or Custom Koozies - Pricing Based on quantity and design</ListItem>
-                            <ListItem>Custom drinkware- Based on quantity and design</ListItem>
-                        </UnorderedList>
+                        <AddonsList />
                     </CardBody>
                     <CardFooter></CardFooter>
                 </Card>

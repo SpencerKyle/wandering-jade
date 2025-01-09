@@ -19,10 +19,11 @@ const initValues = {
     notes: "",
 }
 
-const addons = ["Bartender Service", "Additional Pop-up Bar", "Corn Hole", "Barrels and Bar-Height Tables", "Custom Drink Menu (Printed copy at event)", "Bar Consultation and Drink Tasting (Prior to Event)", "Koozies", "Custom Koozies", "Custom Drinkware"]
 const socials = ["Facebook", "Instagram", "TikTok", "Google", "Yelp", "Repeat Client", "Client Referral"]
 const packages = ["Take it Easy", "Perfect Match", "Going All Out"]
 const events = ["Wedding", "Corporate", "Party", "Event", "Other"]
+
+import addonData from '../lib/addons.json'
 
 const initState = {values:initValues}
 
@@ -119,8 +120,10 @@ export default function Book() {
         <Head>
             <title>Wandering Jade | Quote</title>
         </Head>
+
         <Box p='10' bgColor='gray.50'>
-            <Card> 
+            <Card border='1px' mx='33vw'> 
+            <Text>Please fill out the following form</Text>
             <Container maxW="450px" mt={12}> 
             
              <Modal isOpen={isSubmitted} onClose={onClose} isCentered>
@@ -137,6 +140,7 @@ export default function Book() {
                     </ModalContent>
                 </Modal>
 
+                {/* - - - - - - Name - - - - - - */}
                 <FormControl mb={3} isRequired isInvalid={touched.name && !values.name}>
                     <FormLabel>Full Name</FormLabel>
                     <Input
@@ -150,6 +154,7 @@ export default function Book() {
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
 
+                {/* - - - - - - Email - - - - - - */}
                 <FormControl mb={3} isRequired isInvalid={touched.email && !values.email}>
                     <FormLabel>Email</FormLabel>
                     <Input
@@ -176,6 +181,7 @@ export default function Book() {
                         <FormErrorMessage>Emails do not match</FormErrorMessage>
                 </FormControl>
 
+                {/* - - - - - - Phone - - - - - - */}
                 <FormControl mb={3} isRequired isInvalid={touched.phone && !values.phone}>
                     <FormLabel>Phone</FormLabel>
                     <Input
@@ -191,6 +197,7 @@ export default function Book() {
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
 
+                {/* - - - - - - Date - - - - - - */}
                 <FormControl mb={3} isRequired isInvalid={touched.date && !values.date}>
                     <FormLabel>Event Date</FormLabel>
                     <Input
@@ -204,6 +211,7 @@ export default function Book() {
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
 
+                {/* - - - - - - Address - - - - - - */}
                 <FormControl mb={3} isRequired isInvalid={touched.address && !values.address}>
                     <FormLabel>Event Address</FormLabel>
                     <Input
@@ -217,6 +225,7 @@ export default function Book() {
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
 
+                {/* - - - - - - Type - - - - - - */}
                 <FormControl mb={3} isRequired>
                     <FormLabel>What type of event is this</FormLabel>
                     <Select 
@@ -237,6 +246,7 @@ export default function Book() {
                     </Select>
                 </FormControl>
 
+                {/* - - - - - - Wedding Coordinator - - - - - - */}
                 {values.event === "Wedding" && (
                     <FormControl mb={3}>
                         <FormLabel>Wedding Coordinator Contact Info</FormLabel>
@@ -251,6 +261,7 @@ export default function Book() {
                     </FormControl>
                 )}
 
+                {/* - - - - - - Guest Count - - - - - - */}
                 <FormControl mb={3} isRequired isInvalid={touched.count && !values.count}>
                     <FormLabel>Estimated Guest count</FormLabel>
                             <Input 
@@ -263,6 +274,7 @@ export default function Book() {
                         <FormErrorMessage>Required</FormErrorMessage>
                 </FormControl>
 
+                {/* - - - - - - Package - - - - - - */}
                 <FormControl mb={3} isRequired>
                     <FormLabel>Which <a href="">Package</a> do you want?</FormLabel>
                     <Select 
@@ -283,9 +295,10 @@ export default function Book() {
                     </Select>
                 </FormControl>
 
+                {/* - - - - - - Addons - - - - - - */}
                 <FormControl mb={3}>
-                    <FormLabel>Please select any Addons</FormLabel>
-                    <List>
+                    <FormLabel>Select any addons you would like to include</FormLabel>
+                    {/* <List>
                         {addons.map((option) => (
                             <ListItem key={option}>
                                 <Checkbox
@@ -298,9 +311,25 @@ export default function Book() {
                                 </Checkbox>
                             </ListItem>
                         ))}
+                    </List> */}
+                    <List>
+                            {Object.entries(addonData).map(([key, [addonItem, addonPrice]]) => (
+                                <ListItem key={key}>
+                                    <Checkbox
+                                        key={key}
+                                        value={addonItem}
+                                        p='1'
+                                        onChange={handleChange}
+                                    >
+                                        <div>{addonItem} : <strong>{addonPrice}</strong></div>
+                                    </Checkbox>
+                                </ListItem>
+                            ))}
                     </List>
                 </FormControl>
 
+
+                {/* - - - - - - Socials - - - - - - */}
                 <FormControl mb={3}>
                     <FormLabel>Where did you hear about us?</FormLabel>
                     <Select name="social" placeholder="Select an option" isInvalid={touched.social && !values.social} value={state.values.social} onChange={handleChange} >
@@ -312,6 +341,7 @@ export default function Book() {
                     </Select>
                 </FormControl>
 
+                {/* - - - - - - Etc - - - - - - */}
                 <FormControl mb={3}>
                     <FormLabel>Any other details you&apos;d like us to know?</FormLabel>
                     <Textarea  type="text" name="notes" value={values.notes} onChange={handleChange}/>

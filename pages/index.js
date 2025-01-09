@@ -51,7 +51,7 @@ export default function Home() {
         </Box>
       </Box>
       )}
-      <Box mx={[null, null, '25vw']} pb='5'>
+      <Box mx={[null, '10vw', '25vw']} pb='5'>
           <Box px={['10',null ,'120']} py={['10',null ,'20']}>
               <Divider my='10'/>
             </Box>
