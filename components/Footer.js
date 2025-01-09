@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Box, Text, _hover, VStack, HStack, Flex, Center } from '@chakra-ui/react'
+import { Box, Text, _hover, VStack, HStack, Flex } from '@chakra-ui/react'
 
 function Footer() {
     return (
         <Box bgColor='gray.50'>
-            <Box bgColor='#d1bc98'>
-                <Flex height="40vh" justifyContent="center" alignItems='center'>
+            <Box bgColor='#d1bc98' py={10}>
+                <Flex justifyContent="center" alignItems='center'>
                     <VStack spacing={2}>
                     <Image
                         src='/logo-footer.png'

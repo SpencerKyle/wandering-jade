@@ -122,8 +122,7 @@ export default function Book() {
         </Head>
 
         <Box p='10' bgColor='gray.50'>
-            <Card border='1px' mx='33vw'> 
-            <Text>Please fill out the following form</Text>
+            <Card mx='auto' width={['100%', null, '50%']}> 
             <Container maxW="450px" mt={12}> 
             
              <Modal isOpen={isSubmitted} onClose={onClose} isCentered>

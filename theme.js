@@ -15,9 +15,9 @@ const theme = extendTheme({
     banner: `'Georgia'`
   },
   textStyles: {
-    serviceItem: {
-      fontWeight: 'bold',
-    }
+    // serviceItem: {
+    //   fontWeight: 'bold',
+    // }
   },
   layerStyles: {
     galleryItem: {
@@ -33,14 +33,23 @@ const theme = extendTheme({
     },
     customBox: {
       position: 'absolute',
+      borderRadius: '10px',
       bottom: 0,
-      width: '75%',
+      width: '70%',
       height: 'auto',
       backgroundColor: 'white',
       textAlign: 'center',
       padding: '20px',
       transform: 'translateY(50%)',
-      boxShadow: 'md'
+      boxShadow: 'md',
+      _hover: {
+        bg: 'gray.50'
+      }
+    },
+    serviceCard: {
+      width: ['80%', null, null, null, '90%'],
+      mb: '30px',
+      alignItems: 'center'
     }
   }
 })

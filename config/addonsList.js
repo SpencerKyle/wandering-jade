@@ -7,7 +7,7 @@ const AddonsList = () => {
         <UnorderedList listStylePos='outside'>
             {Object.entries(addonData).map(([key, [addonItem, addonPrice]]) => (
                 <ListItem key={key}>
-                    <div>{addonItem} : {addonPrice}</div>
+                    <div>{addonItem} : <strong>{addonPrice}</strong></div>
                 </ListItem>
             ))}
         </UnorderedList>

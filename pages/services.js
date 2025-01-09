@@ -25,7 +25,7 @@ export default function Services() {
         </Head>
 
         
-        <Box bgColor='gray.50' position='relative' p={10} textStyle='serviceItem'>
+        <Box bgColor='gray.50' p={5} textStyle='serviceItem'>
             
             <Text align='center' fontWeight={'light'}>
                 <Text as={'span'} fontWeight={'bold'}>Please note:</Text> All packages are dry service and do <Text as={'span'} fontWeight={'bold'}>not</Text> include alcohol <Text as={'span'} fontWeight={'bold'}>or</Text> mixers. These must be supplied by the customer.
@@ -35,29 +35,27 @@ export default function Services() {
                 All packages include a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up! (4 Hour Minimum Required)
             </Text>
 
-        <Box width={['80vw', "80vw", "75vw"]}  margin='auto'>
-            <SimpleGrid  columns={[1, 2, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]}>
-            <Card pb={10} bgColor='#E3DDD5' align='center' height={[null, null, '60%']} width={['100%', null, '80%']} mt='5'>    
+        <Box width={['100%', "100%", null, null, "90%"]}  mx='auto'>
+            <SimpleGrid columns={[1, 2, 3, 3, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]} alignItems='start'>
+            <Card  layerStyle='serviceCard' bgColor='#E3DDD5'>    
                 <CardHeader><Heading>Take It Easy</Heading></CardHeader>
                 <CardBody>
-                    <UnorderedList maxW={250} listStylePos='outside' textAlign='left'>
+                    <UnorderedList>
                         <ListItem>2 Certified Bartenders</ListItem>
                         <ListItem>Beer, Wine, & Bubbles Service</ListItem>
                     </UnorderedList>
                 </CardBody>
                 <CardFooter></CardFooter>
-                <Box layerStyle='customBox'>
-                    <Link href='/form'>
-                        Click here for your own custom quote!
-                    </Link>                
-                </Box>
+                    <Box layerStyle='customBox' as='a' href='/form'>
+                            Click here for your own custom quote!
+                    </Box>
             </Card>
 
-            <Card bgColor='#C1C9AF' align='center' height={[null, null, '80%']} width={['100%', null, '70%']} my='5' order={[2, 3]}>
+            <Card layerStyle='serviceCard' bgColor='#C1C9AF' order={[2, 3]}>
                 <CardHeader><Heading>Perfect Match</Heading></CardHeader>
                 <CardBody>
                     <Box>
-                        <UnorderedList maxW={300} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
+                        <UnorderedList>
                             <ListItem>2 Certified Bartenders</ListItem>
                             <ListItem>3 Spirits Options</ListItem>
                             <ListItem>2 Beers Options</ListItem>
@@ -68,20 +66,18 @@ export default function Services() {
                     </Box>
                 </CardBody>
                 <CardFooter></CardFooter>
-                <Box layerStyle='customBox'>
-                    <Link href='/form'>
+                <Box layerStyle='customBox' as='a' href='/form'>
                         Click here for your own custom quote!
-                    </Link>
                 </Box>
             </Card>
 
-            <Card bgColor='#E6EDf5' align='center' width={['100%', null, '80%']} order={[3, 2]}>
+            <Card layerStyle='serviceCard' bgColor='#E6EDf5' order={[3, 2]}>
                 <CardHeader><Heading>Going All Out</Heading></CardHeader>
                 <CardBody>
                     <Box>
-                        <UnorderedList maxW={200} listStylePos='outside' textAlign='left' style={{ display: 'inline-block' }}>
+                        <UnorderedList>
                             <ListItem>2 Certified Bartenders</ListItem>
-                            <ListItem>Full Soda Bar OR 2 Signature Cocktails</ListItem>
+                            <ListItem>Full Soda Bar</ListItem>
                             <ListItem>4 Spirits Options</ListItem>
                             <ListItem>3 Beers Options</ListItem>
                             <ListItem>3 Seltzer Options</ListItem>
@@ -96,10 +92,8 @@ export default function Services() {
                     <Spacer />
                 </CardBody>
                 <CardFooter></CardFooter>
-                <Box layerStyle='customBox'>
-                    <Link href='/form'>
+                <Box layerStyle='customBox' as='a' href='/form'>
                         Click here for your own custom quote!
-                    </Link>                
                 </Box>
             </Card>
 
@@ -108,10 +102,9 @@ export default function Services() {
             <br/>
             <br/>
 
-            <SimpleGrid columns={[1, 1, 3]} pb='5' gap={10}>
+            <SimpleGrid columns={[1, 1, 2, 3, 3]} pb='5' spacing={10} alignItems='start' justifyItems="center">
 
-                <Card align='center' bgColor="#FFE1E1" height={[null, null, '70%']} order={[1, 2]} my='auto'>
-                    
+                <Card layerStyle='serviceCard' bgColor="#FFE1E1" order={[1, 2]}>
                     <CardHeader><Heading>ADD-ONS</Heading></CardHeader>
                     <CardBody>
                         <AddonsList />
@@ -119,15 +112,16 @@ export default function Services() {
                     <CardFooter></CardFooter>
                 </Card>
 
-                <Box borderRadius="lg" overflow="hidden" height='55vh' order={[2, 1]}>
+                <Box layerStyle='serviceCard' borderRadius="lg" overflow="hidden" height={530} order={[2, 1]}>
                     <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
-                <Box borderRadius="lg" overflow="hidden" order={[3, 3]} my='auto'>
+                <Box layerStyle='serviceCard' borderRadius="lg" overflow="hidden" order={[3, 3]}>
                     <Image 
                         src='/gypsypopupbar.webp'
                         width={700}
-                        height={1050}
+                        height={850}
+                        alt='gypsy'
                     />
                 </Box>
             </SimpleGrid>

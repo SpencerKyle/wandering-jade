@@ -51,7 +51,7 @@ export default function Home() {
         </Box>
       </Box>
       )}
-      <Box mx={[null, '10vw', '25vw']} pb='5'>
+      <Box width={[null, '10vw', '70%']} pb='5'>
           <Box px={['10',null ,'120']} py={['10',null ,'20']}>
               <Divider my='10'/>
             </Box>
@@ -64,7 +64,7 @@ export default function Home() {
             <Box alignContent='center' order={[2, null, 1]}>
                 <Heading fontSize='3xl' m='5'>How it works:</Heading>
                 <Text fontSize='xl' m='5'>The party comes to you! We are insured and have certified bartenders ready to serve you and your guests cocktails or mocktails at your next event. We provide everything but the liquid.</Text>
-                <Box _hover={{ bgColor: '#E6A3A4' }} p={3} borderRadius={15}  bg="#E6BDBE" width={['50%', null, '25%']}><Link href='/form'><Text as='b' fontSize='xl' color='white'>Book now!</Text></Link></Box>
+                <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' px={10} py={5} borderRadius={15}  bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Book now!</Text></Box>
             </Box>
             <Box height='400px' position='relative' order={[1, null, 2]}>
               <Image 
