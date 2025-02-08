@@ -4,8 +4,8 @@ import { Box, Text, _hover, VStack, HStack, Flex } from '@chakra-ui/react'
 
 function Footer() {
     return (
-        <Box bgColor='gray.50'>
-            <Box bgColor='#d1bc98' py={10}>
+        <Box bgColor='gray.50' pt='150'>
+            <Box py={10}>
                 <Flex justifyContent="center" alignItems='center'>
                     <VStack spacing={2}>
                     <Image

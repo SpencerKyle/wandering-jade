@@ -248,11 +248,11 @@ export default function Book() {
                 {/* - - - - - - Wedding Coordinator - - - - - - */}
                 {values.event === "Wedding" && (
                     <FormControl mb={3}>
-                        <FormLabel>Wedding Coordinator Contact Info</FormLabel>
+                        <FormLabel>Day of Wedding Coordinator Contact Info</FormLabel>
                         <Input
                             type="text"
                             name="weddingDetails"
-                            placeholder="Phone and/or Email"
+                            placeholder="Name and Phone"
                             value={values.weddingDetails}
                             onChange={handleChange}
                             onBlur={onBlur}
@@ -297,20 +297,6 @@ export default function Book() {
                 {/* - - - - - - Addons - - - - - - */}
                 <FormControl mb={3}>
                     <FormLabel>Select any addons you would like to include</FormLabel>
-                    {/* <List>
-                        {addons.map((option) => (
-                            <ListItem key={option}>
-                                <Checkbox
-                                    key={option}
-                                    value={option}
-                                    p='1'
-                                    onChange={handleChange}
-                                    >
-                                    {option}
-                                </Checkbox>
-                            </ListItem>
-                        ))}
-                    </List> */}
                     <List>
                             {Object.entries(addonData).map(([key, [addonItem, addonPrice]]) => (
                                 <ListItem key={key}>
