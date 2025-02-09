@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, CardHeader, CardBody, CardFooter, Text, UnorderedList, Box, ListItem, SimpleGrid, Heading, Spacer, Divider } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Text, UnorderedList, Box, ListItem, SimpleGrid, Heading, Spacer, Divider, AbsoluteCenter } from '@chakra-ui/react'
 
 function Service() {
     return(
@@ -65,8 +65,13 @@ function Service() {
                                     <ListItem>Any Premium Garnishes</ListItem>
                                     <ListItem>Shopping List Guide</ListItem>
                                     <ListItem>Custom Simple Syrups</ListItem>
-                                    <Text textTransform='lowercase' pl={10}> -or- </Text>
-                                    <ListItem>Full Soda Bar</ListItem>
+                                    <Box position='relative' padding='5'>
+                                        <Divider borderColor={'gray.400'} />
+                                            <AbsoluteCenter bg='#E6EDf5' px='2'>
+                                                +
+                                        </AbsoluteCenter>
+                                    </Box>
+                                    <ListItem>Soda Bar or Alcohol Service</ListItem>
                                 </UnorderedList>
                             </Box>
                             <Spacer />

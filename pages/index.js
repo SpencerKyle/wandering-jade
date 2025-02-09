@@ -57,7 +57,7 @@ export default function Home() {
           <Box px={['10',null ,'120']} py={['10',null ,'20']}>
               <Divider my='10'/>
             </Box>
-            <Text pb={['5', null, '10']} fontSize='2xl' mx='10%'>The Wandering Jade is Utah`s Best Mobile Bar experience! Our western boho style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas.</Text>
+            <Text align='center' pb={['5', null, '10']} fontSize='2xl' mx='10%'>The Wandering Jade is Utah`s Best Mobile Bar experience! Our western boho style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas.</Text>
             <Box px='120' py='19'>
               <Divider my='10'/>
           </Box>
