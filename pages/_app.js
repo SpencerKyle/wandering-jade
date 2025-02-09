@@ -1,6 +1,5 @@
 import '@/styles/globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
-import { useMediaQuery } from "@chakra-ui/media-query";
+import { ChakraProvider, useMediaQuery } from '@chakra-ui/react'
 import Header from '/components/Header.js'
 import Footer from '/components/Footer.js'
 import { Analytics } from '@vercel/analytics/react';

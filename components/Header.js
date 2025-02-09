@@ -38,7 +38,7 @@ function Header() {
                             </Box>
                                 <Box pos='absolute' top='0' left='0' m='1'>
                                     <Image
-                                        src='/logo-transparent.svg'
+                                        src='/logo-footer.png'
                                         height='50'
                                         width='50'
                                         alt='wandering jade logo'

@@ -1,19 +1,17 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/image'
-import Head from 'next/head'
-import Teams from '../components/Team'
+import React from "react";
+import Image from "next/image";
+import { SimpleGrid, Box, Text, Heading } from "@chakra-ui/react";
 
-export default function Team() {
+function teamComp() {
     return (
         <>
-            <Head>
-                <title>Wandering Jade | Team</title>
-            </Head>
-            <Box p='10' bgColor='gray.50' align='center' width="100%">
-                <Teams />
-                {/* <Heading mb='10'>Meet the Team!</Heading>
-                <Box>
-                    <Heading layerStyle='teamName'>Amberdee</Heading>
+            <Box align='center' my='10'>
+                <Heading size='2xl' as='a' href='/team'>Meet the Team!</Heading>
+            </Box>
+
+            <SimpleGrid columns={[1, 2, 3, 3, 3]} justifyItems="center" alignItems='center' align='center' mx='auto'>
+                <Box width='300px'>
+                    <Text layerStyle='teamName'>Amberdee</Text>
                     <Text mb='3'>Owner/Bartender</Text>
                     <Box layerStyle='teamItem'>
                         <Image
@@ -26,8 +24,8 @@ export default function Team() {
                     </Box>
                 </Box>
 
-                <Box>
-                <Heading layerStyle='teamName'>Katelynn</Heading>
+                <Box width='300px'>
+                <Text layerStyle='teamName'>Katelynn</Text>
                 <Text mb='3'>Bartender</Text>
                     <Box layerStyle='teamItem'>
                         <Image
@@ -40,8 +38,8 @@ export default function Team() {
                     </Box>
                 </Box>
 
-                <Box>
-                <Heading layerStyle='teamName'>Jake</Heading>
+                <Box width='300px'>
+                <Text layerStyle='teamName'>Jake</Text>
                 <Text mb='3'>Bartender</Text>                    
                     <Box layerStyle='teamItem'>
                         <Image
@@ -52,9 +50,10 @@ export default function Team() {
                         alt='Picture of Jake in a field'
                         />
                     </Box>
-                </Box> */}
-    
-            </Box>
+                </Box>
+            </SimpleGrid>
         </>
     )
 }
+
+export default teamComp;

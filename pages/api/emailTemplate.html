@@ -17,6 +17,7 @@
             <p>Date: <span style="font-weight: bold; font-size: larger;"><a href="data:text/calendar;charset=utf8,${encodeURIComponent(`BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:${formattedDate}\nDTEND:${formattedDate}\nSUMMARY:Event Title\nDESCRIPTION:Event Description\nEND:VEVENT\nEND:VCALENDAR`)}}">${data.date}</a></span></p>
             <p>Address: <span style="font-weight: bold; font-size: larger;">${data.address}</span></p>
             <p>Type of Event: <span style="font-weight: bold; font-size: larger;">${data.event}</span></p>
+            <p>Coordinator Info (If Applicable): <span style="font-weight: bold; font-size: larger;">${data.weddingDetails}</span></p>
             <p>Guests: <span style="font-weight: bold; font-size: larger;">${data.count}</span></p>
             <p>Package: <span style="font-weight: bold; font-size: larger;">${data.package}</span></p>
             <p>Social: <span style="font-weight: bold; font-size: larger;">${data.social}</span></p>

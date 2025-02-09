@@ -1,24 +1,22 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { Box, Text, _hover, VStack, HStack, Flex, Center } from '@chakra-ui/react'
+import { Box, Text, _hover, VStack, HStack, Flex } from '@chakra-ui/react'
 
 function Footer() {
     return (
-        <Box bgColor='gray.50' p={['2', null, '2']}>
-            <Box bgColor='#5c7551'>
-                <Flex height="50vh" justifyContent="center" alignItems="center">
-                    <Center>
+        <Box bgColor='gray.50' pt='150'>
+            <Box py={10}>
+                <Flex justifyContent="center" alignItems='center'>
                     <VStack spacing={2}>
-                    <Image 
-                        src='/logo-trans.png'
+                    <Image
+                        src='/logo-footer.png'
                         height={200}
                         width={200}
                         alt='wandering jade logo'
                     />
                     <Text fontSize={['xl', null, 'xl']}><a href='mailto:wanderingjadebar@gmail.com'>WANDERINGJADEBAR@GMAIL.COM</a></Text>
                     <Text fontSize={['xl', null, 'xl']}><a href="tel:8013587167">801-358-7167</a></Text>
-                    <HStack spacing={2}>
+                    <HStack spacing={5}>
                         <a href='https://www.facebook.com/profile.php?id=100093143334442' target="_blank">
                             <Image 
                                 src='/facebook.svg'
@@ -45,7 +43,6 @@ function Footer() {
                         </a>
                     </HStack>
                     </VStack>
-                    </Center>
                 </Flex>
             </Box>
         </Box>

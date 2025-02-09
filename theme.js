@@ -14,11 +14,6 @@ const theme = extendTheme({
     body: `'Oswald'`,
     banner: `'Georgia'`
   },
-  textStyles: {
-    serviceItem: {
-      fontWeight: 'bold',
-    }
-  },
   layerStyles: {
     galleryItem: {
       width: '100%',
@@ -27,20 +22,36 @@ const theme = extendTheme({
     },
     teamItem: {
       width: '100%',
-      height: ['50vh', '100vh' ,'100vh'], 
+      height: '400px', 
       position:"relative",
       mb: '10'
     },
+    teamName: {
+      fontSize: "4xl",
+    },
     customBox: {
       position: 'absolute',
+      borderRadius: '10px',
       bottom: 0,
-      width: '75%',
+      width: '70%',
       height: 'auto',
       backgroundColor: 'white',
       textAlign: 'center',
       padding: '20px',
       transform: 'translateY(50%)',
-      boxShadow: 'md'
+      boxShadow: 'md',
+      _hover: {
+        bg: 'gray.50'
+      }
+    },
+    serviceCard: {
+      width: ['80%', null, null, null, '90%'],
+      mb: '30px',
+      alignItems: 'center',
+      _hover: 
+        { 
+          transform: 'scale(1.05)'
+        }
     }
   }
 })
