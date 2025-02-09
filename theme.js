@@ -47,11 +47,13 @@ const theme = extendTheme({
     serviceCard: {
       width: ['80%', null, null, null, '90%'],
       mb: '30px',
-      alignItems: 'center',
-      _hover: 
-        { 
-          transform: 'scale(1.05)'
-        }
+      alignItems: 'center'
+    },
+    serviceCardHover: {
+      _hover:
+      {
+        transform: 'scale(1.05)'
+      }
     }
   }
 })
