@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, CardHeader, CardBody, CardFooter, Text, UnorderedList, Box, ListItem, SimpleGrid, Heading, Spacer } from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, CardFooter, Text, UnorderedList, Box, ListItem, SimpleGrid, Heading, Spacer, Divider, AbsoluteCenter } from '@chakra-ui/react'
 
 function Service() {
     return(
@@ -18,7 +18,7 @@ function Service() {
         </Box>
         <Box width={['100%', "100%", null, null, "90%"]}  mx='auto'>
             <SimpleGrid columns={[1, 2, 3, 3, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]} alignItems='center' mx='auto'>
-                    <Card layerStyle='serviceCard' bgColor='#E3DDD5'>    
+                    <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#E3DDD5'>    
                         <CardHeader><Heading>Take It Easy</Heading></CardHeader>
                         <CardBody >
                             <UnorderedList>
@@ -32,16 +32,16 @@ function Service() {
                             </Box>
                     </Card>
         
-                    <Card layerStyle='serviceCard' bgColor='#C1C9AF' order={[2, 3]}>
+                    <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#C1C9AF' order={[2, 3]}>
                         <CardHeader><Heading>Perfect Match</Heading></CardHeader>
                         <CardBody>
                             <Box>
                                 <UnorderedList>
                                     <ListItem>2 Certified Bartenders</ListItem>
-                                    <ListItem>3 Spirits Options</ListItem>
-                                    <ListItem>2 Beers Options</ListItem>
+                                    <ListItem>3 Spirit Options</ListItem>
+                                    <ListItem>2 Beer Options</ListItem>
                                     <ListItem>2 Seltzer Options</ListItem>
-                                    <ListItem>3 Mixers Options</ListItem>
+                                    <ListItem>3 Mixer Options</ListItem>
                                     <ListItem>Any Garnishes Needed</ListItem>
                                 </UnorderedList>
                             </Box>
@@ -52,20 +52,26 @@ function Service() {
                         </Box>
                     </Card>
         
-                    <Card layerStyle='serviceCard' bgColor='#E6EDf5' order={[3, 2]}>
+                    <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#E6EDf5' order={[3, 2]}>
                         <CardHeader><Heading>Going All Out</Heading></CardHeader>
                         <CardBody>
                             <Box>
                                 <UnorderedList>
                                     <ListItem>2 Certified Bartenders</ListItem>
-                                    <ListItem>Full Soda Bar</ListItem>
-                                    <ListItem>4 Spirits Options</ListItem>
-                                    <ListItem>3 Beers Options</ListItem>
+                                    <ListItem>4 Spirit Options</ListItem>
+                                    <ListItem>3 Beer Options</ListItem>
                                     <ListItem>3 Seltzer Options</ListItem>
-                                    <ListItem>5 Mixers Options</ListItem>
+                                    <ListItem>5 Mixer Options</ListItem>
                                     <ListItem>Any Premium Garnishes</ListItem>
                                     <ListItem>Shopping List Guide</ListItem>
                                     <ListItem>Custom Simple Syrups</ListItem>
+                                    <Box position='relative' padding='5'>
+                                        <Divider borderColor={'gray.400'} />
+                                            <AbsoluteCenter bg='#E6EDf5' px='2'>
+                                                +
+                                        </AbsoluteCenter>
+                                    </Box>
+                                    <ListItem>Soda Bar or Alcohol Service</ListItem>
                                 </UnorderedList>
                             </Box>
                             <Spacer />

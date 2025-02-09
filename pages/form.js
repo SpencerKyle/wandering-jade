@@ -13,7 +13,7 @@ const initValues = {
     event: "",
     weddingDetails: "",
     count: "",
-    package: "",
+    package: "Take it Easy",
     addons: [],
     social: "",
     notes: "",
