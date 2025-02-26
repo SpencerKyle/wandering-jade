@@ -53,7 +53,7 @@ export default function Home() {
         </Box>
       </Box>
       )}
-      <Box width={[null, '10vw', '70%']} pb='5' mx='auto'>
+      <Box width={[null, '10vw', '80%']} pb='5' mx='auto'>
           <Box px={['10',null ,'120']} py={['10',null ,'20']}>
               <Divider my='10'/>
             </Box>
@@ -65,7 +65,7 @@ export default function Home() {
           <SimpleGrid columns={['1', null, '2']} mb={10} align='center'>
             <Box alignContent='center' order={[2, null, 1]}>
                 <Heading fontSize='3xl' m='5'>How it works:</Heading>
-                <Text fontSize='xl' m='5' pb={5}>The party comes to you! We are insured and have certified bartenders ready to serve you and your guests cocktails or mocktails at your next event. We provide everything but the liquid.</Text>
+                <Text fontSize='xl' m='5' pb={5} mx={10}>The party comes to you! We are insured and have certified bartenders ready to serve you and your guests cocktails or mocktails at your next event. We provide everything but the liquid.</Text>
                 <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' px={12} py={5} borderRadius={15}  bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Fill out a form</Text></Box>
                 <Text p={7}>Or</Text>
                 <Box><Text as='a' href="sms:8013587167" bg='#E6BDBE' _hover={{ bgColor: '#E6A3A4' }} borderRadius={15} p={5} fontSize='xl' color='white' fontWeight={700}>Text us @ 801-358-7167</Text></Box>
