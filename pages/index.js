@@ -66,9 +66,11 @@ export default function Home() {
             <Box alignContent='center' order={[2, null, 1]}>
                 <Heading fontSize='3xl' m='5'>How it works:</Heading>
                 <Text fontSize='xl' m='5' pb={5}>The party comes to you! We are insured and have certified bartenders ready to serve you and your guests cocktails or mocktails at your next event. We provide everything but the liquid.</Text>
-                <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' px={10} py={5} borderRadius={15}  bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Book now!</Text></Box>
+                <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' px={12} py={5} borderRadius={15}  bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Fill out a form</Text></Box>
+                <Text p={7}>Or</Text>
+                <Box><Text as='a' href="sms:8013587167" bg='#E6BDBE' _hover={{ bgColor: '#E6A3A4' }} borderRadius={15} p={5} fontSize='xl' color='white' fontWeight={700}>Text us @ 801-358-7167</Text></Box>
             </Box>
-            <Box height='400px' position='relative' order={[1, null, 2]}>
+            <Box height='500px' position='relative' order={[1, null, 2]}>
               <Image 
                   src='/our.webp'
                   fill
