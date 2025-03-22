@@ -27,7 +27,7 @@ function Service() {
                             </UnorderedList>
                         </CardBody>
                         <CardFooter></CardFooter>
-                            <Box layerStyle='customBox' as='a' href='/form'>
+                            <Box layerStyle='customBox' as='a' href='/form?package=Take%20it%20Easy'>
                                     Click here for your own custom quote!
                             </Box>
                     </Card>
@@ -47,7 +47,7 @@ function Service() {
                             </Box>
                         </CardBody>
                         <CardFooter></CardFooter>
-                        <Box layerStyle='customBox' as='a' href='/form'>
+                        <Box layerStyle='customBox' as='a' href='/form?package=Perfect%20Match'>
                                 Click here for your own custom quote!
                         </Box>
                     </Card>
@@ -77,7 +77,7 @@ function Service() {
                             <Spacer />
                         </CardBody>
                         <CardFooter></CardFooter>
-                        <Box layerStyle='customBox' as='a' href='/form'>
+                        <Box layerStyle='customBox' as='a' href='/form?package=Going%20All%20Out'>
                                 Click here for your own custom quote!
                         </Box>
                     </Card>

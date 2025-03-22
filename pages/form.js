@@ -1,6 +1,7 @@
 import { sendContactForm } from "/lib/api"
 import { Container, Heading, FormControl, FormLabel, Input, FormErrorMessage, Button, Select, Checkbox, List, ListItem, Textarea, Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton, useDisclosure, Box, Flex, Card, Text } from "@chakra-ui/react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/router";
 import Head from "next/head";
 
 const initValues = {
@@ -33,6 +34,21 @@ export default function Book() {
     const [touched, setTouched] = useState({})
     const [isSubmitted, setIsSubmitted] = useState(false);
     const { values, isLoading, error } = state
+
+    const router = useRouter();
+    const { package: selectedPackage } = router.query
+
+    useEffect(() => {
+        if (selectedPackage) {
+            setState(prevState => ({
+                ...prevState,
+                values: {
+                    ...prevState.values,
+                    package: selectedPackage, // Update the package value with the URL query
+                },
+            }));
+        }
+    }, [selectedPackage]);
 
     // onBlur, onFocus handler
     const onBlur = ({ target }) => setTouched((prev) => ({...prev, 
@@ -281,7 +297,7 @@ export default function Book() {
                         placeholder="Select a package" 
                         isInvalid={touched.package && !values.package} 
                         errorBorderColor="red.300" 
-                        value={state.values.package} 
+                        value={values.package} 
                         onChange={handleChange} 
                         onBlur={onBlur} 
                         onFocus={onFocus}>
