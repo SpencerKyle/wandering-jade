@@ -5,13 +5,13 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        textTransform: 'uppercase'
+
       }
     }
   },
   fonts: {
-    heading: `'Oswald'`,
-    body: `'Oswald'`,
+    heading: `'Glass Antiqua'`,
+    body: `'Glass Antiqua'`,
     banner: `'Georgia'`
   },
   layerStyles: {

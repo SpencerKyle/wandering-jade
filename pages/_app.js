@@ -6,6 +6,13 @@ import { Analytics } from '@vercel/analytics/react';
 
 import '@fontsource/comfortaa'
 import '@fontsource/oswald'
+
+//Test Fonts
+import '@fontsource/cutive-mono'
+import '@fontsource/glass-antiqua'
+
+
+
 import theme from '../theme'
 
 export default function App({ Component, pageProps }) {
