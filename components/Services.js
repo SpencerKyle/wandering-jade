@@ -38,11 +38,11 @@ function Service() {
                             <Box>
                                 <UnorderedList>
                                     <ListItem>2 Certified Bartenders</ListItem>
-                                    <ListItem>3 Spirit Options</ListItem>
-                                    <ListItem>2 Beer Options</ListItem>
+                                    <ListItem>2 Spirit Options</ListItem>
+                                    <ListItem>3 Beer/Seltzer Options</ListItem>
                                     <ListItem>2 Seltzer Options</ListItem>
                                     <ListItem>3 Mixer Options</ListItem>
-                                    <ListItem>Any Garnishes Needed</ListItem>
+                                    <ListItem>Garnishes</ListItem>
                                 </UnorderedList>
                             </Box>
                         </CardBody>
@@ -58,11 +58,10 @@ function Service() {
                             <Box>
                                 <UnorderedList>
                                     <ListItem>2 Certified Bartenders</ListItem>
-                                    <ListItem>4 Spirit Options</ListItem>
-                                    <ListItem>3 Beer Options</ListItem>
-                                    <ListItem>3 Seltzer Options</ListItem>
-                                    <ListItem>5 Mixer Options</ListItem>
-                                    <ListItem>Any Premium Garnishes</ListItem>
+                                    <ListItem>3 Spirit Options</ListItem>
+                                    <ListItem>3 Beer/Seltzer Options</ListItem>
+                                    <ListItem>5 Mixers Options</ListItem>
+                                    <ListItem>Premium Garnishes</ListItem>
                                     <ListItem>Shopping List Guide</ListItem>
                                     <ListItem>Custom Simple Syrups</ListItem>
                                     <Box position='relative' padding='5'>
