@@ -37,6 +37,7 @@ const theme = extendTheme({
       height: 'auto',
       backgroundColor: 'white',
       textAlign: 'center',
+      fontSize: 'xl',
       padding: '20px',
       transform: 'translateY(50%)',
       boxShadow: 'md',
