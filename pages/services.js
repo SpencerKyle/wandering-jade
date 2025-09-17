@@ -29,6 +29,17 @@ export default function Services() {
         <Box bgColor='gray.50' p={5}>
 
         <Box width={['100%', "100%", null, null, "90%"]}  mx='auto'>
+            <Box align='center'>                
+                <Heading size='2xl' as='a' href='/services'>Services</Heading>
+                <Text align='center' mt='5'>
+                    Please note: All packages are dry service and do not include alcohol or mixers. These must be supplied by the customer.
+                </Text>
+            
+                <Text align='center' mt='5'>
+                    All packages include two certified bartenders, a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up/clean up! Delivery Fee after 50 Miles round trip (4 Hour Minimum Required)
+                </Text>
+            </Box>
+            
             <Service />
         
             <br/>

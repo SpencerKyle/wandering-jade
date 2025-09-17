@@ -5,17 +5,6 @@ import { Card, CardHeader, CardBody, CardFooter, Text, UnorderedList, Box, ListI
 function Service() {
     return(
     <>       
-        <Box align='center'>
-            <Heading size='2xl' as='a' href='/services'>Services</Heading>
-                
-            <Text align='center' mt='5'>
-                Please note: All packages are dry service and do not include alcohol or mixers. These must be supplied by the customer.
-            </Text>
-
-            <Text align='center' mt='5'>
-                All packages include two certified bartenders, a custom printed menu, ice, drinkware, water station, bar equipment, and bar set up/clean up! Delivery Fee after 50 Miles round trip (4 Hour Minimum Required)
-            </Text>
-        </Box>
         <Box width={['100%', "100%", null, null, "90%"]}  mx='auto'>
             <SimpleGrid columns={[1, 2, 3, 3, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]} alignItems='center' mx='auto'>
                     <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#E3DDD5'>    

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 import { Inter } from 'next/font/google'
-import { Box, Text, Divider, Heading, useMediaQuery, SimpleGrid } from '@chakra-ui/react'
+import { Box, Text, Divider, Heading, useMediaQuery, SimpleGrid, Flex } from '@chakra-ui/react'
 import Services from '@/components/Services'
 import Team from '@/components/Team'
 
@@ -53,47 +53,47 @@ export default function Home() {
         </Box>
       </Box>
       )}
-      <Box width={[null, '10vw', '80%']} pb='5' mx='auto'>
-          <Box px={['10',null ,'120']} py={['10',null ,'20']}>
-              <Divider my='10'/>
+      <Box pb='5' mx='auto' align='center'>
+          <Divider my='10'/>
+
+          <Text pb={['5', null, '10']} fontSize='2xl'>The party comes to you! We are insured and have certified bartenders ready to serve you and your guests cocktails or mocktails at your next event. We provide everything but the liquid.</Text>
+
+          <Divider my='10'/>
+
+          <Box>
+              <Heading fontSize='3xl' m='5'>How it works:</Heading>
+              <Box mb='100px'>
+                <Text fontSize='2xl' mb='10px'>Step 1 - Choose from our selection of bars:</Text>
+                <Flex justify='center'>
+                  <Box border='solid' width='400px' height='400px'>
+                    <Text>Wandering Jade Horse Trailer</Text>
+                  </Box>
+                  <Box border='solid' width='400px' height='400px'>
+                    <Text>Gypsy Pop-up Bar</Text>
+                  </Box>
+                </Flex>
+              </Box>
+
+              <Box mb='100px'>
+                <Text fontSize='2xl' mb='10px'>Step 2 - Choose one of our three services below:</Text>
+                <Services/>
+              </Box>
+
+              <Box>
+                <Text fontSize='2xl' mb='10px'>Step 3 -</Text>
+                <Flex justify='center' align='center'>
+                  <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' bg="#E6BDBE" px={6} py={5} borderRadius={15}><Text as='b' fontSize='xl' color='white'>Fill out a quote form!</Text></Box>
+                  <Text p={7}>Or</Text>
+                  <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href="sms:8013587167" bg='#E6BDBE' px={6} py={5} borderRadius={15}><Text as='b' fontSize='xl' color='white'>Text us @ 801-358-7167</Text></Box>
+                </Flex>
+              </Box>
             </Box>
-            <Text align='center' pb={['5', null, '10']} fontSize='2xl' mx='10%'>The Wandering Jade is Utah`s Best Mobile Bar experience! Our western boho style trailer bar offers a unique bar service experience for weddings, parties and events in the Utah County, Salt Lake County and surrounding areas.</Text>
-            <Box px='120' py='19'>
-              <Divider my='10'/>
           </Box>
-
-          <SimpleGrid columns={['1', null, '2']} mb={10} align='center'>
-            <Box alignContent='center' order={[2, null, 1]}>
-                <Heading fontSize='3xl' m='5'>How it works:</Heading>
-                <Text fontSize='xl' m='5' pb={5} mx={10}>The party comes to you! We are insured and have certified bartenders ready to serve you and your guests cocktails or mocktails at your next event. We provide everything but the liquid.</Text>
-                <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' px={6} py={5} borderRadius={15}  bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Fill out a quote form!</Text></Box>
-                <Text p={7}>Or</Text>
-                <Box><Text as='a' href="sms:8013587167" bg='#E6BDBE' _hover={{ bgColor: '#E6A3A4' }} borderRadius={15} p={5} fontSize='xl' color='white' fontWeight={700}>Text us @ 801-358-7167</Text></Box>
-            </Box>
-            <Box height='500px' position='relative' order={[1, null, 2]}>
-              <Image 
-                  src='/our.webp'
-                  fill
-                  sizes='100%'
-                  style={{objectFit:"contain"}}
-                  alt='Gallery picture for the Wandering Jade'
-                  />
-            </Box>
-          </SimpleGrid>
-          </Box>
-
-          <Divider my='10' width='50%' mx='auto'/>
-
-          <Services/>
-
-          <Divider my='10' width='50%' mx='auto'/>
+          
           <Box px='25px'>
             <Team />
           </Box>
-
-          <Divider py='10' width='50%' mx='auto'/>
-
-      </Box>
-      </>
+    </Box>
+    </>
   )
 }
