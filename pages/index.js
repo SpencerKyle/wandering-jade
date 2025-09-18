@@ -64,12 +64,30 @@ export default function Home() {
               <Heading fontSize='3xl' m='5'>How it works:</Heading>
               <Box mb='100px'>
                 <Text fontSize='2xl' mb='10px'>Step 1 - Choose from our selection of bars:</Text>
-                <Flex justify='center'>
-                  <Box border='solid' width='400px' height='400px'>
-                    <Text>Wandering Jade Horse Trailer</Text>
+                <Flex justify='center' gap={5} wrap='wrap'>
+                  <Box position='relative' width='300px' height='auto' _hover={{ transform: 'scale(1.05)' }} mb={10}>
+                    <Image
+                      width={300}
+                      height={850}
+                      src='/step1_jade.webp'
+                      alt='ur mom'
+                      style={{ borderRadius: '15px' }}
+                    />
+                    <Box layerStyle='customBox' style={{left: "50%", transform: "translateX(-50%)", bottom: '-30px'}}>
+                        Wandering Jade
+                    </Box>
                   </Box>
-                  <Box border='solid' width='400px' height='400px'>
-                    <Text>Gypsy Pop-up Bar</Text>
+                  <Box position='relative' width='300px' height='auto' _hover={{ transform: 'scale(1.05)' }}>
+                    <Image
+                      width={300}
+                      height={850}
+                      src='/step1_popup.webp'
+                      alt='ur mom'
+                      style={{ borderRadius: '15px' }}
+                    />
+                    <Box layerStyle='customBox' style={{left: "50%", transform: "translateX(-50%)", bottom: '-30px'}}>
+                        Gypsy
+                    </Box>
                   </Box>
                 </Flex>
               </Box>
