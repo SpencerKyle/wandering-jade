@@ -10,8 +10,8 @@ const theme = extendTheme({
     }
   },
   fonts: {
-    heading: `'Glass Antiqua'`,
-    body: `'Glass Antiqua'`,
+    heading: 'Noto Serif Display',
+    body: 'Noto Serif Display',
     banner: `'Georgia'`
   },
   layerStyles: {
