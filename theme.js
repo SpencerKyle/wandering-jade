@@ -5,13 +5,13 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-
+        fontFamily: 'body'
       }
     }
   },
   fonts: {
-    heading: 'Noto Serif Display',
-    body: 'Noto Serif Display',
+    heading: 'Open Sans',
+    body: 'Open Sans',
     banner: `'Georgia'`
   },
   layerStyles: {
