@@ -13,7 +13,9 @@ function Service() {
                         </CardHeader>
                         <CardBody >
                             <UnorderedList>
-                                <ListItem>Beer, Wine & Bubbles Service</ListItem>
+                                <ListItem>Beer</ListItem>
+                                <ListItem>Wine</ListItem>
+                                <ListItem>Bubbles Service</ListItem>
                             </UnorderedList>
                         </CardBody>
                         <CardFooter></CardFooter>

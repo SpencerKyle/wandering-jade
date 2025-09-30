@@ -10,7 +10,7 @@ const theme = extendTheme({
     }
   },
   fonts: {
-    heading: 'Open Sans',
+    heading: `'Georgia'`,
     body: 'Open Sans',
     banner: `'Georgia'`
   },
@@ -48,7 +48,8 @@ const theme = extendTheme({
     serviceCard: {
       width: ['80%', null, null, null, '90%'],
       mb: '30px',
-      alignItems: 'center'
+      alignItems: 'center',
+      height: '400px'
     },
     serviceCardHover: {
       _hover:
