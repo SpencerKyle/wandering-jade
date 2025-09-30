@@ -49,7 +49,7 @@ const theme = extendTheme({
       width: ['80%', null, null, null, '90%'],
       mb: '30px',
       alignItems: 'center',
-      height: '430px'
+      height: '380px'
     },
     serviceCardHover: {
       _hover:

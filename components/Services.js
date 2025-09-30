@@ -13,9 +13,9 @@ function Service() {
                         </CardHeader>
                         <CardBody >
                             <UnorderedList>
-                                <ListItem fontSize={'xl'}>Beer</ListItem>
-                                <ListItem fontSize={'xl'}>Wine</ListItem>
-                                <ListItem fontSize={'xl'}>Bubbles Service</ListItem>
+                                <ListItem>Beer</ListItem>
+                                <ListItem>Wine</ListItem>
+                                <ListItem>Bubbles Service</ListItem>
                             </UnorderedList>
                         </CardBody>
                         <CardFooter></CardFooter>
@@ -29,12 +29,12 @@ function Service() {
                         <CardBody>
                             <Box>
                                 <UnorderedList>
-                                    <ListItem fontSize={'xl'}>1 Signature Drink</ListItem>
-                                    <ListItem fontSize={'xl'}>2 Spirit Options</ListItem>
-                                    <ListItem fontSize={'xl'}>2 Beer/Seltzer Options</ListItem>
-                                    <ListItem fontSize={'xl'}>1 Wine Option</ListItem>
-                                    <ListItem fontSize={'xl'}>3 Mixer Options</ListItem>
-                                    <ListItem fontSize={'xl'}>Garnishes</ListItem>
+                                    <ListItem>1 Signature Drink</ListItem>
+                                    <ListItem>2 Spirit Options</ListItem>
+                                    <ListItem>2 Beer/Seltzer Options</ListItem>
+                                    <ListItem>1 Wine Option</ListItem>
+                                    <ListItem>3 Mixer Options</ListItem>
+                                    <ListItem>Garnishes</ListItem>
                                 </UnorderedList>
                             </Box>
                         </CardBody>
@@ -49,20 +49,20 @@ function Service() {
                         <CardBody>
                             <Box>
                                 <UnorderedList>
-                                    <ListItem fontSize={'xl'}>2 Signature Drinks</ListItem>
-                                    <ListItem fontSize={'xl'}>3 Spirit Options</ListItem>
-                                    <ListItem fontSize={'xl'}>3 Beer/Seltzer Options</ListItem>
-                                    <ListItem fontSize={'xl'}>2 Wine Options</ListItem>
-                                    <ListItem fontSize={'xl'}>5 Mixer Options</ListItem>
-                                    <ListItem fontSize={'xl'}>1 Custom Simple Syrup</ListItem>
-                                    <ListItem fontSize={'xl'}>Garnishes</ListItem>
+                                    <ListItem>2 Signature Drinks</ListItem>
+                                    <ListItem>3 Spirit Options</ListItem>
+                                    <ListItem>3 Beer/Seltzer Options</ListItem>
+                                    <ListItem>2 Wine Options</ListItem>
+                                    <ListItem>5 Mixer Options</ListItem>
+                                    <ListItem>1 Custom Simple Syrup</ListItem>
+                                    <ListItem>Garnishes</ListItem>
                                     <Box position='relative' padding='5'>
                                         <Divider borderColor={'gray.400'} />
                                             <AbsoluteCenter bg='#E6EDf5' px='2'>
                                                 +
                                         </AbsoluteCenter>
                                     </Box>
-                                    <ListItem fontSize={'xl'}>Soda Bar or Alcohol Service</ListItem>
+                                    <ListItem>Soda Bar or Alcohol Service</ListItem>
                                 </UnorderedList>
                             </Box>
                             <Spacer />
