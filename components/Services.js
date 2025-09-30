@@ -8,7 +8,7 @@ function Service() {
         <Box width={['100%', "100%", null, null, "90%"]}  mx='auto'>
             <SimpleGrid columns={[1, 2, 3, 3, 3]} spacing={10} pb={10} pt={20} justifyItems="center" order={[1, 1]} alignItems='center' mx='auto'>
                     <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#E3DDD5'>    
-                        <CardHeader>
+                        <CardHeader pb='0px'>
                             <Heading>Take It Easy</Heading>
                         </CardHeader>
                         <CardBody >
@@ -25,7 +25,7 @@ function Service() {
                     </Card>
         
                     <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#C1C9AF' order={[2, 3]}>
-                        <CardHeader><Heading>Perfect Match</Heading></CardHeader>
+                        <CardHeader pb='0px'><Heading>Perfect Match</Heading></CardHeader>
                         <CardBody>
                             <Box>
                                 <UnorderedList>
@@ -45,7 +45,7 @@ function Service() {
                     </Card>
         
                     <Card layerStyle={['serviceCard', 'serviceCardHover']} bgColor='#E6EDf5' order={[3, 2]}>
-                        <CardHeader><Heading>Going All Out</Heading></CardHeader>
+                        <CardHeader pb='0px'><Heading>Going All Out</Heading></CardHeader>
                         <CardBody>
                             <Box>
                                 <UnorderedList>
