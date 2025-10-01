@@ -13,9 +13,10 @@ function Service() {
                         </CardHeader>
                         <CardBody >
                             <UnorderedList>
-                                <ListItem>Beer</ListItem>
-                                <ListItem>Wine</ListItem>
-                                <ListItem>Bubbles Service</ListItem>
+                                <ListItem>4 Beer/Seltzer Options</ListItem>
+                                <ListItem>2 Wine Options</ListItem>
+                                <ListItem>1 Champagne Option</ListItem>
+                                <ListItem listStyleType={'none'} fontWeight={'bold'} mt={2}>*No Spirits or Mixers*</ListItem>
                             </UnorderedList>
                         </CardBody>
                         <CardFooter></CardFooter>
