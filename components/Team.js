@@ -15,7 +15,7 @@ function teamComp() {
                     <Text mb='3'>Owner/Bartender</Text>
                     <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/bartender1.webp'
+                        src='/team/amberbartender_2.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
@@ -30,7 +30,7 @@ function teamComp() {
                 <Text mb='3'>Bartender</Text>
                     <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/katelynnbartender-1.webp'
+                        src='/team/katelynnbartender_2.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}
@@ -45,7 +45,7 @@ function teamComp() {
                 <Text mb='3'>Bartender</Text>                    
                     <Box layerStyle='teamItem'>
                         <Image
-                        src='/team/jakebartender.webp'
+                        src='/team/jakebartender_2.webp'
                         fill
                         sizes='100%'
                         style={{objectFit:"contain"}}

@@ -14,8 +14,10 @@
             <p>Name: <span style="font-weight: bold; font-size: larger;">${data.name}</span></p>
             <p>Email: <span style="font-weight: bold; font-size: larger;">${data.email}</span></p>
             <p>Phone: <span style="font-weight: bold; font-size: larger;">${data.phone}</span></p>
-            <p>Date: <span style="font-weight: bold; font-size: larger;"><a href="data:text/calendar;charset=utf8,${encodeURIComponent(`BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nDTSTART:${formattedDate}\nDTEND:${formattedDate}\nSUMMARY:Event Title\nDESCRIPTION:Event Description\nEND:VEVENT\nEND:VCALENDAR`)}}">${data.date}</a></span></p>
+            <p>Date: <span style="font-weight: bold; font-size: larger;"><a href="https://calendar.google.com/event?action=TEMPLATE&dates=${newDate}/${newDate}&text=${data.name}&details=${data.event}">${data.date}</a></span></p>
             <p>Address: <span style="font-weight: bold; font-size: larger;">${data.address}</span></p>
+            <p>City: <span style="font-weight: bold; font-size: larger;">${data.city}</span></p>
+            <p>Zip: <span style="font-weight: bold; font-size: larger;">${data.zip}</span></p>
             <p>Type of Event: <span style="font-weight: bold; font-size: larger;">${data.event}</span></p>
             <p>Coordinator Info (If Applicable): <span style="font-weight: bold; font-size: larger;">${data.weddingDetails}</span></p>
             <p>Guests: <span style="font-weight: bold; font-size: larger;">${data.count}</span></p>

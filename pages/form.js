@@ -11,6 +11,8 @@ const initValues = {
     phone: "",
     date: "",
     address: "",
+    city: "",
+    zip: "",
     event: "",
     weddingDetails: "",
     count: "",
@@ -234,6 +236,30 @@ export default function Book() {
                         name='address'
                         errorBorderColor="red.300"
                         value={values.address}
+                        onChange={handleChange}
+                        onBlur={onBlur}
+                        />
+                        <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+                <FormControl mb={3} isRequired isInvalid={touched.city && !values.city}>
+                    <FormLabel>City</FormLabel>
+                    <Input
+                        type='text'
+                        name='city'
+                        errorBorderColor="red.300"
+                        value={values.city}
+                        onChange={handleChange}
+                        onBlur={onBlur}
+                        />
+                        <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+                <FormControl mb={3} isRequired isInvalid={touched.zip && !values.zip}>
+                    <FormLabel>Zip</FormLabel>
+                    <Input
+                        type='text'
+                        name='zip'
+                        errorBorderColor="red.300"
+                        value={values.zip}
                         onChange={handleChange}
                         onBlur={onBlur}
                         />

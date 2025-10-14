@@ -77,11 +77,11 @@ export default function Home() {
                         Wandering Jade
                     </Box>
                   </Box>
-                  <Box position='relative' width='300px' height='auto' _hover={{ transform: 'scale(1.05)' }}>
+                  <Box position='relative' width='300px' height='auto' _hover={{ transform: 'scale(1.05)' }} mb={10}>
                     <Image
                       width={300}
                       height={850}
-                      src='/step1_popup.webp'
+                      src='/step1_gypsy_2.webp'
                       alt='ur mom'
                       style={{ borderRadius: '15px' }}
                     />
