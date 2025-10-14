@@ -86,7 +86,7 @@ export default function Home() {
                       style={{ borderRadius: '15px' }}
                     />
                     <Box layerStyle='customBox' style={{left: "50%", transform: "translateX(-50%)", bottom: '-30px'}}>
-                        Gypsy
+                        Tipsy Pop-up Bar
                     </Box>
                   </Box>
                 </Flex>

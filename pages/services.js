@@ -71,7 +71,7 @@ export default function Services() {
                         alt='gypsy'
                     />
                     <Box layerStyle='customBox' style={{left: "50px"}}>
-                        Gypsy Pop Up Bar
+                        Tipsy Pop-up Bar
                     </Box>
                 </Box>
             </SimpleGrid>
