@@ -63,9 +63,9 @@ export default function Services() {
                     <Carousel hasMediaButton={false} hasSizeButton={false} hasIndexBoard={false} hasThumbnails={false} isAutoPlaying={true} images={addonImgs} leftIcon={<ChevronLeftIcon w={10} h={10} color='gray.300'/>} rightIcon={<ChevronRightIcon w={10} h={10} color='gray.300'/>}/>
                 </Box>
 
-                <Box layerStyle='serviceCard' borderRadius="lg" order={[3, 3]} position='relative' alignItems='center' width="100%">
+                <Box borderRadius="lg" order={[3, 3]} position='relative' alignItems='center' width="100%">
                     <Image 
-                        src='/gypsypopupbar.webp'
+                        src='/step1_gypsy_2.webp'
                         width={700}
                         height={850}
                         alt='gypsy'

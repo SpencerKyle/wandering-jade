@@ -82,7 +82,7 @@ export default function Home() {
                       width={300}
                       height={850}
                       src='/step1_gypsy_2.webp'
-                      alt='ur mom'
+                      alt='picture of the Gypsy Pop-up Bar'
                       style={{ borderRadius: '15px' }}
                     />
                     <Box layerStyle='customBox' style={{left: "50%", transform: "translateX(-50%)", bottom: '-30px'}}>
