@@ -16,6 +16,7 @@ const initValues = {
     event: "",
     weddingDetails: "",
     count: "",
+    bar: "",
     package: "Take it Easy",
     addons: [],
     social: "",
@@ -23,6 +24,7 @@ const initValues = {
 }
 
 const socials = ["Facebook", "Instagram", "TikTok", "Google", "Yelp", "Repeat Client", "Client Referral"]
+const bars = ["Jade Horse Trailer Bar", "Tipsy Pop-up Bar"]
 const packages = ["Take it Easy", "Perfect Match", "Going All Out"]
 const events = ["Wedding", "Corporate", "Party", "Event", "Other"]
 
@@ -313,6 +315,27 @@ export default function Book() {
                                 onBlur={onBlur}>
                             </Input>
                         <FormErrorMessage>Required</FormErrorMessage>
+                </FormControl>
+
+                {/* - - - - - - Bar Type - - - - - - */}
+                <FormControl mb={3} isRequired>
+                    <FormLabel>Please choose a bar type</FormLabel>
+                    <Select 
+                        name="bar" 
+                        placeholder="Select a bar" 
+                        isInvalid={touched.bar && !values.bar} 
+                        errorBorderColor="red.300" 
+                        value={values.bar} 
+                        onChange={handleChange} 
+                        onBlur={onBlur} 
+                        onFocus={onFocus}>
+
+                        {bars.map((option) => (
+                            <option key={option} value={option}>
+                                {option}
+                            </option>
+                        ))}
+                    </Select>
                 </FormControl>
 
                 {/* - - - - - - Package - - - - - - */}
