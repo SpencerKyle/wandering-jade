@@ -12,7 +12,7 @@ function Service() {
                             <Heading>Take It Easy</Heading>
                         </CardHeader>
                         <CardBody >
-                            <UnorderedList>
+                            <UnorderedList textAlign='left'>
                                 <ListItem>4 Beer/Seltzer Options</ListItem>
                                 <ListItem>2 Wine Options</ListItem>
                                 <ListItem>1 Champagne Option</ListItem>
@@ -29,7 +29,7 @@ function Service() {
                         <CardHeader pb='0px'><Heading>Perfect Match</Heading></CardHeader>
                         <CardBody>
                             <Box>
-                                <UnorderedList>
+                                <UnorderedList textAlign='left'>
                                     <ListItem>1 Signature Drink</ListItem>
                                     <ListItem>2 Spirit Options</ListItem>
                                     <ListItem>2 Beer/Seltzer Options</ListItem>
@@ -49,7 +49,7 @@ function Service() {
                         <CardHeader pb='0px'><Heading>Going All Out</Heading></CardHeader>
                         <CardBody>
                             <Box>
-                                <UnorderedList>
+                                <UnorderedList textAlign='left'>
                                     <ListItem>2 Signature Drinks</ListItem>
                                     <ListItem>3 Spirit Options</ListItem>
                                     <ListItem>3 Beer/Seltzer Options</ListItem>

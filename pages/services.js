@@ -49,7 +49,7 @@ export default function Services() {
                 <Box order={[1, 2]} alignItems='center' display='flex' flexDir='column'>
                     <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' px={6} py={5} borderRadius={15}  bg="#E6BDBE"><Text as='b' fontSize='xl' color='white'>Fill out a quote form!</Text></Box>
                     <Text mb={10} mt={5}>Or</Text>
-                    <Box mb={20}><Text as='a' href="sms:8013587167" bg='#E6BDBE' _hover={{ bgColor: '#E6A3A4' }} borderRadius={15} p={5} fontSize='xl' color='white' fontWeight={700}>Text us @ 801-358-7167</Text></Box>
+                    <Box mb={20}><Text as='a' href="mailto:wanderingjadebar@gmail.com" bg='#E6BDBE' _hover={{ bgColor: '#E6A3A4' }} borderRadius={15} p={5} fontSize='xl' color='white' fontWeight={700}>wanderingjadebar@gmail.com</Text></Box>
                     <Card layerStyle='serviceCard' bgColor="#FFE1E1" >
                         <CardHeader><Heading>ADD-ONS</Heading></CardHeader>
                         <CardBody>

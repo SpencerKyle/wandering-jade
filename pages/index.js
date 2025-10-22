@@ -63,11 +63,11 @@ export default function Home() {
           <Box>
               <Heading fontSize='3xl' m='5'>How it works:</Heading>
               <Box mb='100px'>
-                <Text fontSize='2xl' mb='10px'>Step 1 - Choose from our selection of bars:</Text>
-                <Flex justify='center' gap={5} wrap='wrap'>
-                  <Box position='relative' width='300px' height='auto' _hover={{ transform: 'scale(1.05)' }} mb={10}>
+                <Text fontSize='2xl' mb='20px'>Step 1 - Choose from our selection of bars:</Text>
+                <Flex justify='center' gap={20} wrap='wrap'>
+                  <Box position='relative' width='450px' height='auto' mb={10}>
                     <Image
-                      width={300}
+                      width={500}
                       height={850}
                       src='/step1_jade.webp'
                       alt='ur mom'
@@ -77,9 +77,9 @@ export default function Home() {
                         Wandering Jade
                     </Box>
                   </Box>
-                  <Box position='relative' width='300px' height='auto' _hover={{ transform: 'scale(1.05)' }} mb={10}>
+                  <Box position='relative' width='450px' height='auto' mb={10}>
                     <Image
-                      width={300}
+                      width={500}
                       height={850}
                       src='/step1_gypsy_2.webp'
                       alt='picture of the Gypsy Pop-up Bar'
@@ -97,19 +97,73 @@ export default function Home() {
                 <Services/>
               </Box>
 
-              <Box>
+              <Box mb={20} textAlign='center'>
                 <Text fontSize='2xl' mb='10px'>Step 3 -</Text>
-                <Flex justify='center' align='center'>
-                  <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' bg="#E6BDBE" px={6} py={5} borderRadius={15}><Text as='b' fontSize='xl' color='white'>Fill out a quote form!</Text></Box>
-                  <Text p={7}>Or</Text>
-                  <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href="sms:8013587167" bg='#E6BDBE' px={6} py={5} borderRadius={15}><Text as='b' fontSize='xl' color='white'>Text us @ 801-358-7167</Text></Box>
-                </Flex>
+                <Box display='grid' gridTemplateColumns={['1fr', null, '1fr auto 1fr']} alignItems='center' gap={1} justifyItems='center' mt={10}>
+                  <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='/form' bg="#E6BDBE" px={6} py={5} borderRadius={15} textAlign="center" w={['90%', 'fit-content']}>
+                    <Text fontWeight="bold" fontSize='xl' color='white'>Click here to fill out a quote form!</Text>
+                  </Box>
+
+                  <Text fontSize='xl' fontWeight='bold' textAlign='center' lineHeight='1' my='20px'>
+                    or
+                  </Text>
+
+                  <Box _hover={{ bgColor: '#E6A3A4' }} as='a' href='mailto:wanderingjadebar@gmail.com' bg="#E6BDBE" px={6} py={5} borderRadius={15} textAlign="center" w={['90%', 'fit-content']}>
+                    <Text fontWeight="bold" fontSize='xl' color='white'>Email us! wanderingjadebar@gmail.com</Text>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           </Box>
           
           <Box px='25px'>
-            <Team />
+            <Box align='center' my='10'>
+            <Heading size='2xl' as='a' href='/team'>Meet the Team!</Heading>
+          </Box>
+
+          <SimpleGrid columns={[1, 2, 3, 3, 3]} justifyItems="center" alignItems='start' align='center' mx='auto'>
+            <Box width='300px'>
+                <Text layerStyle='teamName'>Amberdee</Text>
+                <Text mb='3'>Owner/Bartender</Text>
+                <Box layerStyle='teamItem'>
+                    <Image
+                      src='/team/amberbartender_2.webp'
+                      fill
+                      sizes='100%'
+                      style={{objectFit:"contain"}}
+                      alt='Picture of Amberdee in the Wandering Jade'
+                    />
+                </Box>
+            </Box>
+
+            <Box width='300px'>
+              <Text layerStyle='teamName'>Katelynn</Text>
+              <Text mb='3'>Bartender</Text>
+              <Box layerStyle='teamItem'>
+                  <Image
+                    src='/team/katelynnbartender_2.webp'
+                    fill
+                    sizes='100%'
+                    style={{objectFit:"contain"}}
+                    alt='Picture of Katelynn in a field'
+                  />
+              </Box>
+            </Box>
+
+            <Box width='300px'>
+              <Text layerStyle='teamName'>Jake</Text>
+              <Text mb='3'>Bartender</Text>                    
+                <Box layerStyle='teamItem'>
+                    <Image
+                    src='/team/jakebartender_2.webp'
+                    fill
+                    sizes='100%'
+                    style={{objectFit:"contain"}}
+                    alt='Picture of Jake in a field'
+                  />
+                </Box>
+              </Box>
+            </SimpleGrid>
           </Box>
     </Box>
     </>
