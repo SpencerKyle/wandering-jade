@@ -25,6 +25,19 @@ function teamComp() {
                     <Text>Hi! I’m Amberdee, mobile bar owner by night and law enforcement by day. I’ve always had a love for DIY projects, being crafty and creating spaces where people can have a great time. This business started as a passion project and has quickly become one of my favorite adventures. My go-to drink is a fresh lime aka vodka soda with sweetened lime (my secret ingredient)</Text>
                 </Box>
 
+                <Box width='400px' paddingTop='70px'>
+                    <Box layerStyle='teamItem' style={{position: 'relative'}}>
+                        <Image
+                        src='/team/team3.webp'
+                        fill
+                        sizes='100%'
+                        style={{objectFit:"contain"}}
+                        alt='Amber and Katelynn pouring drinks behind the bar.'
+                        />
+                    <Text position="absolute" bottom="3" left="50%" transform="translateX(-50%)" fontSize='xl' fontWeight='bold'>The Dream Team!</Text>
+                    </Box>
+                </Box>
+
                 <Box width='300px'>
                 <Text layerStyle='teamName'>Katelynn</Text>
                 <Text mb='3'>Bartender</Text>
@@ -40,20 +53,6 @@ function teamComp() {
                     <Text>Hey! I’m Katelynn, bartender, social media manager and proud hype girl of the team! I love getting to connect with people, keeping the vibes high and keeping the drinks flowing. My go-to drink is a Titos gingerale with lime.</Text>
                 </Box>
 
-                <Box width='300px'>
-                <Text layerStyle='teamName'>Jake</Text>
-                <Text mb='3'>Bartender</Text>                    
-                    <Box layerStyle='teamItem'>
-                        <Image
-                        src='/team/jakebartender_2.webp'
-                        fill
-                        sizes='100%'
-                        style={{objectFit:"contain"}}
-                        alt='Picture of Jake in a field'
-                        />
-                    </Box>
-                    <Text>Hey, I’m Jake. I’m one of the friendly faces behind the bar, and probably the one who fixes the trailer before your event! I love tinkering with tools and helping out with anything mechanical. My go-to drink is a Captain dr. pepper.</Text>
-                </Box>
             </SimpleGrid>
         </>
     )

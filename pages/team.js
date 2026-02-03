@@ -1,5 +1,4 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
-import Image from 'next/image'
+import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import Teams from '../components/Team'
 

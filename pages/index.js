@@ -136,6 +136,19 @@ export default function Home() {
                 </Box>
             </Box>
 
+            <Box width='400px' paddingTop='70px'>
+                <Box layerStyle='teamItem' style={{position: 'relative'}}>
+                  <Image
+                    src='/team/team3.webp'
+                    fill
+                    sizes='100%'
+                    style={{objectFit:"contain"}}
+                    alt='Amber and Katelynn pouring drinks behind the bar.'
+                    />
+                  <Text position="absolute" bottom="3" left="50%" transform="translateX(-50%)" fontSize='xl' fontWeight='bold'>The Dream Team!</Text>
+                  </Box>
+              </Box>
+
             <Box width='300px'>
               <Text layerStyle='teamName'>Katelynn</Text>
               <Text mb='3'>Bartender</Text>
@@ -149,20 +162,6 @@ export default function Home() {
                   />
               </Box>
             </Box>
-
-            <Box width='300px'>
-              <Text layerStyle='teamName'>Jake</Text>
-              <Text mb='3'>Bartender</Text>                    
-                <Box layerStyle='teamItem'>
-                    <Image
-                    src='/team/jakebartender_2.webp'
-                    fill
-                    sizes='100%'
-                    style={{objectFit:"contain"}}
-                    alt='Picture of Jake in a field'
-                  />
-                </Box>
-              </Box>
             </SimpleGrid>
           </Box>
     </Box>
