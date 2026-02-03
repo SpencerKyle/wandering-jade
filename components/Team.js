@@ -25,7 +25,7 @@ function teamComp() {
                     <Text>Hi! I’m Amberdee, mobile bar owner by night and law enforcement by day. I’ve always had a love for DIY projects, being crafty and creating spaces where people can have a great time. This business started as a passion project and has quickly become one of my favorite adventures. My go-to drink is a fresh lime aka vodka soda with sweetened lime (my secret ingredient)</Text>
                 </Box>
 
-                <Box width={['350','400px']} paddingTop='70px'>
+                <Box width={['350px','400px']} paddingTop={['0', '70px']}>
                     <Box layerStyle='teamItem' style={{position: 'relative'}}>
                         <Image
                         src='/team/team3.webp'

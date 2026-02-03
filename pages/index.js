@@ -136,7 +136,7 @@ export default function Home() {
                 </Box>
             </Box>
 
-            <Box width={['350px','400px']} paddingTop='70px'>
+            <Box width={['350px','400px']} paddingTop={['0', '70px']}>
                 <Box layerStyle='teamItem' style={{position: 'relative'}}>
                   <Image
                     src='/team/team3.webp'
